@@ -210,9 +210,9 @@ def success():
 def maps():
     return render_template('maps.html')
 
-@app.route('/baidu_map')
+@app.route('/baidu_maps')
 def loading_map():
-    return render_template('baidu_map.html')
+    return render_template('baidu_maps.html')
 
 @app.route('/json')
 def json():
