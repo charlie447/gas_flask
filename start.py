@@ -16,7 +16,7 @@ login_manager = LoginManager()
 app = Flask(__name__)
 db = SQLAlchemy(app)
 # URI -> mysql://username:password@server/db
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:CHARLIE4494@localhost:3306/gas'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:admin@localhost:3306/gas'
 login_manager.init_app(app)
 login_manager.login_view = "login"
 login_manager.login_message = "please login and continue"
@@ -205,6 +205,14 @@ def success():
     db.session.add(repair_info_data)
     db.session.commit()
     return render_template('success.html')
+
+@app.route('/maps')
+def maps():
+    return render_template('maps.html')
+
+@app.route('/baidu_map')
+def loading_map():
+    return render_template('baidu_map.html')
 
 @app.route('/json')
 def json():

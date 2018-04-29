@@ -1,632 +1,230 @@
-2018-04-04 00:24:53,872 DEBUG   : index page
-2018-04-04 00:24:53,872 DEBUG   : cookie name None
-2018-04-04 00:24:53,873 DEBUG   : you are not logged in
-2018-04-04 00:25:18,018 DEBUG   : index page
-2018-04-04 00:25:18,019 DEBUG   : cookie name None
-2018-04-04 00:25:18,019 DEBUG   : you are not logged in
-2018-04-04 00:25:31,163 DEBUG   : index page
-2018-04-04 00:25:31,164 DEBUG   : cookie name None
-2018-04-04 00:25:31,164 DEBUG   : you are not logged in
-2018-04-04 00:26:08,539 DEBUG   : index page
-2018-04-04 00:26:08,540 DEBUG   : cookie name None
-2018-04-04 00:26:08,540 DEBUG   : you are not logged in
-2018-04-05 15:16:16,603 DEBUG   : index page
-2018-04-05 15:16:16,603 DEBUG   : cookie name None
-2018-04-05 15:16:16,603 DEBUG   : you are not logged in
-2018-04-05 15:16:49,665 DEBUG   : index page
-2018-04-05 15:16:49,665 DEBUG   : cookie name None
-2018-04-05 15:16:49,665 DEBUG   : you are not logged in
-2018-04-05 15:19:18,868 DEBUG   : index page
-2018-04-05 15:19:18,869 DEBUG   : cookie name None
-2018-04-05 15:19:18,869 DEBUG   : you are not logged in
-2018-04-05 15:19:22,996 DEBUG   : index page
-2018-04-05 15:19:22,996 DEBUG   : cookie name None
-2018-04-05 15:19:22,996 DEBUG   : you are not logged in
-2018-04-05 15:19:24,557 DEBUG   : index page
-2018-04-05 15:19:24,557 DEBUG   : cookie name None
-2018-04-05 15:19:24,557 DEBUG   : you are not logged in
-2018-04-05 15:19:43,628 DEBUG   : index page
-2018-04-05 15:19:43,628 DEBUG   : cookie name None
-2018-04-05 15:19:43,628 DEBUG   : you are not logged in
-2018-04-05 15:20:10,300 DEBUG   : index page
-2018-04-05 15:20:10,300 DEBUG   : cookie name None
-2018-04-05 15:20:10,300 DEBUG   : you are not logged in
-2018-04-05 15:56:06,003 DEBUG   : login get method
-2018-04-05 15:59:44,533 DEBUG   : login get method
-2018-04-05 16:00:16,295 DEBUG   : login get method
-2018-04-05 16:01:45,332 DEBUG   : login get method
-2018-04-05 16:02:12,196 DEBUG   : login get method
-2018-04-05 16:05:33,486 DEBUG   : login get method
-2018-04-05 16:07:42,719 DEBUG   : login get method
-2018-04-05 16:08:19,259 DEBUG   : login get method
-2018-04-05 16:08:36,660 DEBUG   : login get method
-2018-04-05 16:08:38,231 DEBUG   : login get method
-2018-04-05 16:08:39,082 DEBUG   : login get method
-2018-04-05 16:08:47,426 DEBUG   : login get method
-2018-04-05 16:08:54,582 DEBUG   : login get method
-2018-04-05 16:10:15,617 DEBUG   : login get method
-2018-04-05 16:10:30,097 DEBUG   : login get method
-2018-04-05 16:12:51,176 DEBUG   : login get method
-2018-04-05 16:13:00,739 DEBUG   : login get method
-2018-04-05 16:14:18,283 DEBUG   : login get method
-2018-04-05 16:14:25,363 DEBUG   : login post method
-2018-04-05 16:15:49,621 DEBUG   : login get method
-2018-04-05 16:15:58,686 DEBUG   : login post method
-2018-04-05 16:16:59,667 DEBUG   : login post method
-2018-04-05 16:18:14,248 DEBUG   : login get method
-2018-04-05 16:18:21,826 DEBUG   : login post method
-2018-04-05 16:18:28,933 DEBUG   : login post method
-2018-04-05 16:20:37,382 DEBUG   : login get method
-2018-04-05 16:20:47,869 DEBUG   : login post method
-2018-04-05 16:22:47,490 DEBUG   : login post method
-2018-04-05 16:24:45,695 DEBUG   : login get method
-2018-04-05 16:24:51,548 DEBUG   : login post method
-2018-04-05 16:26:26,334 DEBUG   : login get method
-2018-04-05 16:26:32,151 DEBUG   : login post method
-2018-04-05 16:27:44,156 DEBUG   : login get method
-2018-04-05 16:27:51,769 DEBUG   : login post method
-2018-04-05 16:29:16,764 DEBUG   : login get method
-2018-04-05 16:29:22,246 DEBUG   : login post method
-2018-04-05 16:32:08,980 DEBUG   : login get method
-2018-04-05 16:32:15,601 DEBUG   : login post method
-2018-04-05 16:36:36,524 DEBUG   : login get method
-2018-04-05 16:36:41,798 DEBUG   : login post method
-2018-04-05 16:38:48,409 DEBUG   : login get method
-2018-04-05 16:38:53,555 DEBUG   : login post method
-2018-04-05 16:49:32,061 DEBUG   : login get method
-2018-04-05 16:49:41,654 DEBUG   : login post method
-2018-04-05 16:55:05,465 DEBUG   : login get method
-2018-04-05 16:55:11,264 DEBUG   : login post method
-2018-04-05 17:30:00,730 DEBUG   : login get method
-2018-04-05 17:30:08,115 DEBUG   : login post method
-2018-04-05 17:37:56,891 DEBUG   : login get method
-2018-04-05 17:38:04,701 DEBUG   : login post method
-2018-04-05 17:38:18,819 DEBUG   : login get method
-2018-04-05 17:47:03,418 DEBUG   : login get method
-2018-04-05 17:47:11,195 DEBUG   : login post method
-2018-04-05 17:58:51,883 DEBUG   : login get method
-2018-04-05 17:58:57,937 DEBUG   : login post method
-2018-04-05 18:05:03,149 DEBUG   : login get method
-2018-04-05 18:14:37,461 DEBUG   : index page
-2018-04-05 18:14:37,462 DEBUG   : cookie name None
-2018-04-05 18:14:37,462 DEBUG   : you are not logged in
-2018-04-05 18:14:49,844 DEBUG   : index page
-2018-04-05 18:14:49,845 DEBUG   : cookie name None
-2018-04-05 18:14:49,845 DEBUG   : you are not logged in
-2018-04-05 18:15:13,120 DEBUG   : index page
-2018-04-05 18:15:13,121 DEBUG   : cookie name None
-2018-04-05 18:15:13,121 DEBUG   : you are not logged in
-2018-04-05 18:15:15,251 DEBUG   : index page
-2018-04-05 18:15:15,251 DEBUG   : cookie name None
-2018-04-05 18:15:15,251 DEBUG   : you are not logged in
-2018-04-05 19:39:08,558 DEBUG   : index page
-2018-04-05 19:39:08,558 DEBUG   : cookie name None
-2018-04-05 19:39:08,558 DEBUG   : you are not logged in
-2018-04-05 19:39:29,023 DEBUG   : index page
-2018-04-05 19:39:29,023 DEBUG   : cookie name None
-2018-04-05 19:39:29,023 DEBUG   : you are not logged in
-2018-04-05 19:39:41,341 DEBUG   : index page
-2018-04-05 19:39:41,341 DEBUG   : cookie name None
-2018-04-05 19:39:41,341 DEBUG   : you are not logged in
-2018-04-05 19:55:01,335 DEBUG   : index page
-2018-04-05 19:55:01,336 DEBUG   : cookie name None
-2018-04-05 19:55:01,336 DEBUG   : you are not logged in
-2018-04-05 19:55:01,340 DEBUG   : login get method
-2018-04-05 19:55:06,090 DEBUG   : index page
-2018-04-05 19:55:06,090 DEBUG   : cookie name None
-2018-04-05 19:55:06,090 DEBUG   : you are not logged in
-2018-04-05 19:55:06,782 DEBUG   : login get method
-2018-04-05 19:55:54,344 DEBUG   : login post method
-2018-04-05 19:55:54,346 DEBUG   : next is None
-2018-04-05 20:19:13,014 DEBUG   : login get method
-2018-04-05 20:19:16,805 DEBUG   : index page
-2018-04-05 20:19:16,806 DEBUG   : cookie name None
-2018-04-05 20:19:16,806 DEBUG   : you are not logged in
-2018-04-05 20:19:17,131 DEBUG   : login get method
-2018-04-05 20:19:21,846 DEBUG   : login post method
-2018-04-05 20:19:21,848 DEBUG   : next is None
-2018-04-05 20:21:42,487 DEBUG   : index page
-2018-04-05 20:21:42,488 DEBUG   : cookie name None
-2018-04-05 20:21:42,488 DEBUG   : you are not logged in
-2018-04-05 20:21:42,492 DEBUG   : login get method
-2018-04-05 20:21:47,419 DEBUG   : login post method
-2018-04-05 20:21:47,420 DEBUG   : next is None
-2018-04-05 20:21:49,520 DEBUG   : login get method
-2018-04-05 20:22:12,455 DEBUG   : login post method
-2018-04-05 20:22:12,455 DEBUG   : next is None
-2018-04-05 20:22:12,456 DEBUG   : login get method
-2018-04-05 20:33:10,027 DEBUG   : login post method
-2018-04-05 20:33:10,028 DEBUG   : next is None
-2018-04-05 20:33:12,246 DEBUG   : login get method
-2018-04-05 20:33:19,064 DEBUG   : login post method
-2018-04-05 20:33:19,064 DEBUG   : next is None
-2018-04-05 20:33:19,065 DEBUG   : login get method
-2018-04-05 20:34:41,382 DEBUG   : login post method
-2018-04-05 20:34:41,384 DEBUG   : next is None
-2018-04-05 20:34:41,385 DEBUG   : login get method
-2018-04-05 20:42:58,889 DEBUG   : login post method
-2018-04-05 20:42:58,890 DEBUG   : next is None
-2018-04-05 20:42:58,891 DEBUG   : login get method
-2018-04-05 20:44:20,589 DEBUG   : index page
-2018-04-05 20:44:20,589 DEBUG   : cookie name None
-2018-04-05 20:44:20,589 DEBUG   : login user is <__main__.User object at 0x10422a710>
-2018-04-05 20:44:20,589 DEBUG   : Logged in as admin
-2018-04-05 20:50:03,147 DEBUG   : index page
-2018-04-05 20:50:03,147 DEBUG   : cookie name None
-2018-04-05 20:50:03,147 DEBUG   : login user is <__main__.User object at 0x10422a898>
-2018-04-05 20:50:03,147 DEBUG   : Logged in as admin
-2018-04-05 20:50:05,764 DEBUG   : logout page
-2018-04-05 20:50:05,771 DEBUG   : login get method
-2018-04-05 20:50:05,771 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 20:50:05,771 DEBUG   : Authorization is None
-2018-04-05 20:50:11,060 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-05 20:50:11,060 DEBUG   : Authorization is None
-2018-04-05 20:50:11,065 DEBUG   : login get method
-2018-04-05 20:50:11,066 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-05 20:50:11,066 DEBUG   : Authorization is None
-2018-04-05 20:50:19,263 DEBUG   : login post method
-2018-04-05 20:50:19,264 DEBUG   : next is /
-2018-04-05 20:50:19,265 DEBUG   : login get method
-2018-04-05 20:50:25,258 DEBUG   : index page
-2018-04-05 20:50:25,259 DEBUG   : cookie name None
-2018-04-05 20:50:25,259 DEBUG   : login user is <__main__.User object at 0x104261f98>
-2018-04-05 20:50:25,259 DEBUG   : Logged in as admin
-2018-04-05 20:50:31,419 DEBUG   : logout page
-2018-04-05 20:50:31,425 DEBUG   : login get method
-2018-04-05 20:50:31,425 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 20:50:31,426 DEBUG   : Authorization is None
-2018-04-05 20:56:49,063 DEBUG   : login post method
-2018-04-05 20:56:49,065 DEBUG   : next is None
-2018-04-05 20:56:49,066 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 20:56:49,066 DEBUG   : Authorization is None
-2018-04-05 20:56:51,739 DEBUG   : login get method
-2018-04-05 20:56:51,739 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 20:56:51,739 DEBUG   : Authorization is None
-2018-04-05 20:56:59,056 DEBUG   : login post method
-2018-04-05 20:56:59,057 DEBUG   : next is None
-2018-04-05 20:56:59,058 DEBUG   : login get method
-2018-04-05 20:58:51,879 DEBUG   : login post method
-2018-04-05 20:58:51,879 DEBUG   : next is None
-2018-04-05 20:58:53,447 DEBUG   : login get method
-2018-04-05 20:58:58,893 DEBUG   : index page
-2018-04-05 20:58:58,893 DEBUG   : cookie name None
-2018-04-05 20:58:58,894 DEBUG   : login user is <__main__.User object at 0x107906eb8>
-2018-04-05 20:58:58,894 DEBUG   : Logged in as admin
-2018-04-05 20:59:04,269 DEBUG   : logout page
-2018-04-05 20:59:04,275 DEBUG   : login get method
-2018-04-05 20:59:04,276 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 20:59:04,276 DEBUG   : Authorization is None
-2018-04-05 21:14:14,267 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-05 21:14:14,268 DEBUG   : Authorization is None
-2018-04-05 21:14:14,284 DEBUG   : login get method
-2018-04-05 21:14:14,284 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-05 21:14:14,285 DEBUG   : Authorization is None
-2018-04-05 21:14:25,227 DEBUG   : login post method
-2018-04-05 21:14:25,228 DEBUG   : next is /
-2018-04-05 21:14:25,228 DEBUG   : login get method
-2018-04-05 21:15:40,895 DEBUG   : index page
-2018-04-05 21:15:40,895 DEBUG   : cookie name None
-2018-04-05 21:15:40,896 DEBUG   : login user is <__main__.User object at 0x107937278>
-2018-04-05 21:15:40,896 DEBUG   : Logged in as admin
-2018-04-05 21:15:42,861 DEBUG   : logout page
-2018-04-05 21:15:42,868 DEBUG   : login get method
-2018-04-05 21:15:42,868 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:15:42,868 DEBUG   : Authorization is None
-2018-04-05 21:16:01,802 DEBUG   : login post method
-2018-04-05 21:16:01,802 DEBUG   : next is None
-2018-04-05 21:16:01,803 DEBUG   : login get method
-2018-04-05 21:25:16,918 DEBUG   : index page
-2018-04-05 21:25:16,919 DEBUG   : cookie name None
-2018-04-05 21:25:16,919 DEBUG   : login user is <__main__.User object at 0x10842c6d8>
-2018-04-05 21:25:16,919 DEBUG   : Logged in as admin
-2018-04-05 21:25:18,958 DEBUG   : logout page
-2018-04-05 21:25:18,965 DEBUG   : login get method
-2018-04-05 21:25:18,966 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:25:18,966 DEBUG   : Authorization is None
-2018-04-05 21:25:24,163 DEBUG   : login post method
-2018-04-05 21:25:24,164 DEBUG   : next is None
-2018-04-05 21:25:24,165 DEBUG   : login get method
-2018-04-05 21:36:05,201 DEBUG   : index page
-2018-04-05 21:36:05,202 DEBUG   : cookie name None
-2018-04-05 21:36:05,202 DEBUG   : login user is <__main__.User object at 0x10e2be6d8>
-2018-04-05 21:36:05,203 DEBUG   : Logged in as admin
-2018-04-05 21:36:06,971 DEBUG   : logout page
-2018-04-05 21:36:06,978 DEBUG   : login get method
-2018-04-05 21:36:06,978 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:36:06,979 DEBUG   : Authorization is None
-2018-04-05 21:36:17,634 DEBUG   : login post method
-2018-04-05 21:36:17,635 DEBUG   : next is None
-2018-04-05 21:36:17,636 DEBUG   : login get method
-2018-04-05 21:42:35,887 DEBUG   : index page
-2018-04-05 21:42:35,887 DEBUG   : cookie name None
-2018-04-05 21:42:35,888 DEBUG   : login user is <__main__.User object at 0x1028626d8>
-2018-04-05 21:42:35,888 DEBUG   : Logged in as admin
-2018-04-05 21:42:37,440 DEBUG   : logout page
-2018-04-05 21:42:37,446 DEBUG   : login get method
-2018-04-05 21:42:37,447 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:42:37,447 DEBUG   : Authorization is None
-2018-04-05 21:42:52,063 DEBUG   : login post method
-2018-04-05 21:42:52,064 DEBUG   : next is None
-2018-04-05 21:56:22,875 DEBUG   : logout page
-2018-04-05 21:56:22,880 DEBUG   : login get method
-2018-04-05 21:56:22,881 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:56:22,881 DEBUG   : Authorization is None
-2018-04-05 21:56:28,272 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-05 21:56:28,273 DEBUG   : Authorization is None
-2018-04-05 21:56:28,280 DEBUG   : login get method
-2018-04-05 21:56:28,280 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-05 21:56:28,280 DEBUG   : Authorization is None
-2018-04-05 21:56:37,355 DEBUG   : login post method
-2018-04-05 21:56:37,355 DEBUG   : next is /
-2018-04-05 21:56:38,907 DEBUG   : logout page
-2018-04-05 21:56:38,914 DEBUG   : login get method
-2018-04-05 21:56:38,914 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:56:38,914 DEBUG   : Authorization is None
-2018-04-05 21:56:45,633 DEBUG   : login post method
-2018-04-05 21:56:45,633 DEBUG   : next is None
-2018-04-05 21:56:45,634 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:56:45,634 DEBUG   : Authorization is None
-2018-04-05 21:56:50,088 DEBUG   : login get method
-2018-04-05 21:56:50,089 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 21:56:50,089 DEBUG   : Authorization is None
-2018-04-05 21:57:03,344 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-05 21:57:03,344 DEBUG   : Authorization is None
-2018-04-05 21:57:03,349 DEBUG   : login get method
-2018-04-05 21:57:03,350 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-05 21:57:03,350 DEBUG   : Authorization is None
-2018-04-05 22:16:50,873 DEBUG   : login post method
-2018-04-05 22:16:50,874 DEBUG   : next is /
-2018-04-05 22:16:50,874 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-05 22:16:50,874 DEBUG   : Authorization is None
-2018-04-05 22:16:53,007 DEBUG   : login get method
-2018-04-05 22:16:53,008 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 22:16:53,008 DEBUG   : Authorization is None
-2018-04-05 22:16:58,369 DEBUG   : login post method
-2018-04-05 22:16:58,370 DEBUG   : next is None
-2018-04-05 22:16:58,370 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 22:16:58,370 DEBUG   : Authorization is None
-2018-04-05 22:17:00,407 DEBUG   : login get method
-2018-04-05 22:17:00,407 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 22:17:00,407 DEBUG   : Authorization is None
-2018-04-05 22:17:10,432 DEBUG   : login post method
-2018-04-05 22:17:10,432 DEBUG   : next is None
-2018-04-05 22:17:45,417 DEBUG   : logout page
-2018-04-05 22:17:45,423 DEBUG   : login get method
-2018-04-05 22:17:45,424 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 22:17:45,424 DEBUG   : Authorization is None
-2018-04-05 23:36:39,921 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-05 23:36:39,926 DEBUG   : Authorization is None
-2018-04-05 23:36:39,931 DEBUG   : login get method
-2018-04-05 23:36:39,932 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-05 23:36:39,932 DEBUG   : Authorization is None
-2018-04-05 23:36:47,294 DEBUG   : login post method
-2018-04-05 23:36:47,295 DEBUG   : next is /
-2018-04-05 23:36:55,407 DEBUG   : logout page
-2018-04-05 23:36:55,414 DEBUG   : login get method
-2018-04-05 23:36:55,415 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-05 23:36:55,415 DEBUG   : Authorization is None
-2018-04-06 14:44:33,516 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-06 14:44:33,516 DEBUG   : Authorization is None
-2018-04-06 14:44:33,524 DEBUG   : login get method
-2018-04-06 14:44:33,524 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-06 14:44:33,524 DEBUG   : Authorization is None
-2018-04-06 14:44:40,840 DEBUG   : login post method
-2018-04-06 14:44:40,842 DEBUG   : next is /
-2018-04-06 14:47:41,777 DEBUG   : login post method
-2018-04-06 14:47:41,778 DEBUG   : next is /
-2018-04-06 14:48:24,691 DEBUG   : login get method
-2018-04-06 14:48:31,971 DEBUG   : index page
-2018-04-06 14:48:31,972 DEBUG   : cookie name admin
-2018-04-06 14:48:31,972 DEBUG   : login user is <__main__.User object at 0x10fc15cc0>
-2018-04-06 14:48:31,972 DEBUG   : Logged in as admin
-2018-04-06 14:48:39,290 DEBUG   : index page
-2018-04-06 14:48:39,290 DEBUG   : cookie name admin
-2018-04-06 14:48:39,290 DEBUG   : login user is <__main__.User object at 0x10fc15c88>
-2018-04-06 14:48:39,290 DEBUG   : Logged in as admin
-2018-04-07 15:21:43,988 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-07 15:21:43,988 DEBUG   : Authorization is None
-2018-04-07 15:21:43,997 DEBUG   : login get method
-2018-04-07 15:21:51,875 DEBUG   : login post method
-2018-04-07 15:21:51,877 DEBUG   : next is /
-2018-04-07 15:27:53,498 DEBUG   : index page
-2018-04-07 15:27:53,499 DEBUG   : cookie name admin
-2018-04-07 15:27:53,499 DEBUG   : login user is <__main__.User object at 0x10c8a5c88>
-2018-04-07 15:27:53,499 DEBUG   : Logged in as admin
-2018-04-12 21:14:07,948 DEBUG   : index page
-2018-04-12 21:14:07,949 DEBUG   : cookie name admin
-2018-04-12 21:14:07,949 DEBUG   : login user is <__main__.User object at 0x1083406d8>
-2018-04-12 21:14:07,949 DEBUG   : Logged in as admin
-2018-04-12 21:14:15,691 DEBUG   : logout page
-2018-04-12 21:14:15,696 DEBUG   : login get method
-2018-04-12 21:14:15,697 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 21:14:15,697 DEBUG   : Authorization is None
-2018-04-12 21:14:23,904 DEBUG   : login get method
-2018-04-12 21:14:23,904 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 21:14:23,905 DEBUG   : Authorization is None
-2018-04-12 21:14:38,998 DEBUG   : login post method
-2018-04-12 21:14:39,000 DEBUG   : next is None
-2018-04-12 21:20:55,623 DEBUG   : login post method
-2018-04-12 21:20:55,624 DEBUG   : next is None
-2018-04-12 21:22:30,385 DEBUG   : login post method
-2018-04-12 21:22:30,386 DEBUG   : next is None
-2018-04-12 21:24:31,334 DEBUG   : index page
-2018-04-12 21:24:31,335 DEBUG   : cookie name admin
-2018-04-12 21:24:31,335 DEBUG   : login user is <__main__.User object at 0x10b8186d8>
-2018-04-12 21:24:31,335 DEBUG   : Logged in as admin
-2018-04-12 21:26:34,671 DEBUG   : index page
-2018-04-12 21:26:34,672 DEBUG   : cookie name admin
-2018-04-12 21:26:34,672 DEBUG   : login user is <__main__.User object at 0x10b87cf60>
-2018-04-12 21:26:34,672 DEBUG   : Logged in as admin
-2018-04-12 21:26:42,538 DEBUG   : logout page
-2018-04-12 21:26:42,544 DEBUG   : login get method
-2018-04-12 21:26:42,544 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 21:26:42,545 DEBUG   : Authorization is None
-2018-04-12 21:26:48,788 DEBUG   : login post method
-2018-04-12 21:26:48,790 DEBUG   : next is None
-2018-04-12 21:29:06,014 DEBUG   : login post method
-2018-04-12 21:29:06,014 DEBUG   : next is None
-2018-04-12 21:29:16,146 DEBUG   : login post method
-2018-04-12 21:29:16,147 DEBUG   : next is None
-2018-04-12 21:29:28,512 DEBUG   : login post method
-2018-04-12 21:29:28,513 DEBUG   : next is None
-2018-04-12 21:30:27,860 DEBUG   : login post method
-2018-04-12 21:30:27,861 DEBUG   : next is None
-2018-04-12 21:39:15,106 DEBUG   : login post method
-2018-04-12 21:39:15,111 DEBUG   : next is None
-2018-04-12 21:39:37,227 DEBUG   : login post method
-2018-04-12 21:39:37,228 DEBUG   : next is None
-2018-04-12 21:39:39,735 DEBUG   : logout page
-2018-04-12 21:39:39,741 DEBUG   : login get method
-2018-04-12 21:39:39,742 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 21:39:39,742 DEBUG   : Authorization is None
-2018-04-12 21:39:45,366 DEBUG   : login post method
-2018-04-12 21:39:45,367 DEBUG   : next is None
-2018-04-12 21:40:31,904 DEBUG   : login post method
-2018-04-12 21:40:31,905 DEBUG   : next is None
-2018-04-12 21:40:54,310 DEBUG   : login post method
-2018-04-12 21:40:54,311 DEBUG   : next is None
-2018-04-12 21:41:53,636 DEBUG   : login post method
-2018-04-12 21:41:53,636 DEBUG   : next is None
-2018-04-12 21:42:01,066 DEBUG   : logout page
-2018-04-12 21:42:01,071 DEBUG   : login get method
-2018-04-12 21:42:01,072 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 21:42:01,072 DEBUG   : Authorization is None
-2018-04-12 21:44:42,914 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-12 21:44:42,914 DEBUG   : Authorization is None
-2018-04-12 21:44:42,920 DEBUG   : login get method
-2018-04-12 21:44:42,920 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', '/')])
-2018-04-12 21:44:42,921 DEBUG   : Authorization is None
-2018-04-12 21:44:49,047 DEBUG   : login post method
-2018-04-12 21:44:49,049 DEBUG   : next is /
-2018-04-12 21:45:06,854 DEBUG   : index page
-2018-04-12 21:45:06,854 DEBUG   : cookie name admin
-2018-04-12 21:45:06,854 DEBUG   : login user is <__main__.User object at 0x10edd26d8>
-2018-04-12 21:45:06,854 DEBUG   : Logged in as admin
-2018-04-12 21:45:13,217 DEBUG   : index page
-2018-04-12 21:45:13,217 DEBUG   : cookie name admin
-2018-04-12 21:45:13,217 DEBUG   : login user is <__main__.User object at 0x10edd2550>
-2018-04-12 21:45:13,217 DEBUG   : Logged in as admin
-2018-04-12 21:45:14,689 DEBUG   : index page
-2018-04-12 21:45:14,689 DEBUG   : cookie name admin
-2018-04-12 21:45:14,690 DEBUG   : login user is <__main__.User object at 0x10ed82a20>
-2018-04-12 21:45:14,690 DEBUG   : Logged in as admin
-2018-04-12 21:45:34,162 DEBUG   : index page
-2018-04-12 21:45:34,162 DEBUG   : cookie name admin
-2018-04-12 21:45:34,163 DEBUG   : login user is <__main__.User object at 0x10edb8fd0>
-2018-04-12 21:45:34,163 DEBUG   : Logged in as admin
-2018-04-12 21:45:36,537 DEBUG   : index page
-2018-04-12 21:45:36,538 DEBUG   : cookie name admin
-2018-04-12 21:45:36,538 DEBUG   : login user is <__main__.User object at 0x10ed82470>
-2018-04-12 21:45:36,538 DEBUG   : Logged in as admin
-2018-04-12 21:45:38,565 DEBUG   : index page
-2018-04-12 21:45:38,565 DEBUG   : cookie name admin
-2018-04-12 21:45:38,566 DEBUG   : login user is <__main__.User object at 0x10edffb38>
-2018-04-12 21:45:38,566 DEBUG   : Logged in as admin
-2018-04-12 21:45:40,879 DEBUG   : index page
-2018-04-12 21:45:40,879 DEBUG   : cookie name admin
-2018-04-12 21:45:40,879 DEBUG   : login user is <__main__.User object at 0x10ee0e438>
-2018-04-12 21:45:40,880 DEBUG   : Logged in as admin
-2018-04-12 21:45:43,447 DEBUG   : index page
-2018-04-12 21:45:43,448 DEBUG   : cookie name admin
-2018-04-12 21:45:43,448 DEBUG   : login user is <__main__.User object at 0x10ee0eda0>
-2018-04-12 21:45:43,448 DEBUG   : Logged in as admin
-2018-04-12 21:45:45,623 DEBUG   : index page
-2018-04-12 21:45:45,623 DEBUG   : cookie name admin
-2018-04-12 21:45:45,623 DEBUG   : login user is <__main__.User object at 0x10ee18748>
-2018-04-12 21:45:45,624 DEBUG   : Logged in as admin
-2018-04-12 22:00:43,009 DEBUG   : index page
-2018-04-12 22:00:43,010 DEBUG   : cookie name admin
-2018-04-12 22:00:43,010 DEBUG   : login user is <__main__.User object at 0x10ee0ea58>
-2018-04-12 22:00:43,010 DEBUG   : Logged in as admin
-2018-04-12 22:01:53,677 DEBUG   : index page
-2018-04-12 22:01:53,677 DEBUG   : cookie name admin
-2018-04-12 22:01:53,677 DEBUG   : login user is <__main__.User object at 0x105d8e7b8>
-2018-04-12 22:01:53,677 DEBUG   : Logged in as admin
-2018-04-12 22:02:29,549 DEBUG   : index page
-2018-04-12 22:02:29,554 DEBUG   : cookie name admin
-2018-04-12 22:02:29,555 DEBUG   : login user is <__main__.User object at 0x105db5908>
-2018-04-12 22:02:29,555 DEBUG   : Logged in as admin
-2018-04-12 22:02:42,717 DEBUG   : index page
-2018-04-12 22:02:42,717 DEBUG   : cookie name admin
-2018-04-12 22:02:42,717 DEBUG   : login user is <__main__.User object at 0x105df1a90>
-2018-04-12 22:02:42,717 DEBUG   : Logged in as admin
-2018-04-12 22:03:35,883 DEBUG   : index page
-2018-04-12 22:03:35,884 DEBUG   : cookie name admin
-2018-04-12 22:03:35,884 DEBUG   : login user is <__main__.User object at 0x105e0a898>
-2018-04-12 22:03:35,884 DEBUG   : Logged in as admin
-2018-04-12 22:03:43,885 DEBUG   : index page
-2018-04-12 22:03:43,885 DEBUG   : cookie name admin
-2018-04-12 22:03:43,885 DEBUG   : login user is <__main__.User object at 0x105e0f208>
-2018-04-12 22:03:43,885 DEBUG   : Logged in as admin
-2018-04-12 22:04:05,028 DEBUG   : index page
-2018-04-12 22:04:05,028 DEBUG   : cookie name admin
-2018-04-12 22:04:05,028 DEBUG   : login user is <__main__.User object at 0x105e0fb70>
-2018-04-12 22:04:05,028 DEBUG   : Logged in as admin
-2018-04-12 22:04:17,248 DEBUG   : index page
-2018-04-12 22:04:17,248 DEBUG   : cookie name admin
-2018-04-12 22:04:17,248 DEBUG   : login user is <__main__.User object at 0x105e19518>
-2018-04-12 22:04:17,248 DEBUG   : Logged in as admin
-2018-04-12 22:04:40,857 DEBUG   : index page
-2018-04-12 22:04:40,858 DEBUG   : cookie name admin
-2018-04-12 22:04:40,858 DEBUG   : login user is <__main__.User object at 0x10f892710>
-2018-04-12 22:04:40,858 DEBUG   : Logged in as admin
-2018-04-12 22:06:09,384 DEBUG   : logout page
-2018-04-12 22:06:09,389 DEBUG   : login get method
-2018-04-12 22:06:09,389 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 22:06:09,390 DEBUG   : Authorization is None
-2018-04-12 22:06:13,824 DEBUG   : login post method
-2018-04-12 22:06:13,826 DEBUG   : next is None
-2018-04-12 22:06:13,827 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 22:06:13,827 DEBUG   : Authorization is None
-2018-04-12 22:06:15,281 DEBUG   : login get method
-2018-04-12 22:06:15,282 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
-2018-04-12 22:06:15,282 DEBUG   : Authorization is None
-2018-04-12 22:06:21,064 DEBUG   : login post method
-2018-04-12 22:06:21,064 DEBUG   : next is None
-2018-04-12 22:09:43,611 DEBUG   : login post method
-2018-04-12 22:09:43,612 DEBUG   : next is None
-2018-04-12 22:09:48,360 DEBUG   : index page
-2018-04-12 22:09:48,360 DEBUG   : cookie name admin
-2018-04-12 22:09:48,360 DEBUG   : login user is <__main__.User object at 0x10f90ddd8>
-2018-04-12 22:09:48,361 DEBUG   : Logged in as admin
-2018-04-17 20:07:23,606 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-17 20:07:23,607 DEBUG   : Authorization is None
-2018-04-17 20:07:23,614 DEBUG   : login get method
-2018-04-17 20:07:30,082 DEBUG   : login post method
-2018-04-17 20:07:30,084 DEBUG   : next is /
-2018-04-17 20:15:14,969 DEBUG   : login post method
-2018-04-17 20:15:14,969 DEBUG   : next is /
-2018-04-17 20:28:33,601 DEBUG   : login post method
-2018-04-17 20:28:33,602 DEBUG   : next is /
-2018-04-17 20:38:14,284 DEBUG   : login post method
-2018-04-17 20:38:14,284 DEBUG   : next is /
-2018-04-17 20:39:26,739 DEBUG   : login post method
-2018-04-17 20:39:26,740 DEBUG   : next is /
-2018-04-17 20:40:10,460 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-17 20:40:10,461 DEBUG   : Authorization is None
-2018-04-17 20:40:10,469 DEBUG   : login get method
-2018-04-17 20:40:17,054 DEBUG   : login post method
-2018-04-17 20:40:17,055 DEBUG   : next is /
-2018-04-17 20:41:26,520 DEBUG   : login post method
-2018-04-17 20:41:26,521 DEBUG   : next is /
-2018-04-17 20:53:15,951 DEBUG   : login post method
-2018-04-17 20:53:15,958 DEBUG   : next is /
-2018-04-17 20:53:48,867 DEBUG   : login post method
-2018-04-17 20:53:48,868 DEBUG   : next is /
-2018-04-17 20:54:55,079 DEBUG   : login post method
-2018-04-17 20:54:55,080 DEBUG   : next is /
-2018-04-17 20:55:26,615 DEBUG   : login post method
-2018-04-17 20:55:26,617 DEBUG   : next is /
-2018-04-22 23:43:38,779 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-22 23:43:38,779 DEBUG   : Authorization is None
-2018-04-22 23:43:38,784 DEBUG   : login get method
-2018-04-22 23:44:09,181 DEBUG   : login post method
-2018-04-22 23:44:09,183 DEBUG   : next is /
-2018-04-22 23:59:44,556 DEBUG   : index page
-2018-04-22 23:59:44,561 DEBUG   : cookie name admin
-2018-04-22 23:59:44,561 DEBUG   : login user is <__main__.User object at 0x111dd4da0>
-2018-04-22 23:59:44,562 DEBUG   : Logged in as admin
-2018-04-23 00:39:19,345 DEBUG   : index page
-2018-04-23 00:39:19,345 DEBUG   : cookie name admin
-2018-04-23 00:39:19,345 DEBUG   : login user is <__main__.User object at 0x10d41cc88>
-2018-04-23 00:39:19,346 DEBUG   : Logged in as admin
-2018-04-26 20:13:07,652 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-26 20:13:07,653 DEBUG   : Authorization is None
-2018-04-26 20:13:07,657 DEBUG   : login get method
-2018-04-26 20:13:13,962 DEBUG   : login post method
-2018-04-26 20:13:13,964 DEBUG   : next is /
-2018-04-26 20:55:24,886 DEBUG   : login post method
-2018-04-26 20:55:24,893 DEBUG   : next is /
-2018-04-26 20:55:29,338 DEBUG   : index page
-2018-04-26 20:55:29,338 DEBUG   : cookie name admin
-2018-04-26 20:55:29,338 DEBUG   : login user is <__main__.User object at 0x10e5616d8>
-2018-04-26 20:55:29,339 DEBUG   : Logged in as admin
-2018-04-26 20:58:00,561 DEBUG   : index page
-2018-04-26 20:58:00,562 DEBUG   : cookie name admin
-2018-04-26 20:58:00,562 DEBUG   : login user is <__main__.User object at 0x105b48dd8>
-2018-04-26 20:58:00,562 DEBUG   : Logged in as admin
-2018-04-26 20:58:15,921 DEBUG   : index page
-2018-04-26 20:58:15,921 DEBUG   : cookie name admin
-2018-04-26 20:58:15,922 DEBUG   : login user is <__main__.User object at 0x105bc0588>
-2018-04-26 20:58:15,922 DEBUG   : Logged in as admin
-2018-04-26 20:58:54,964 DEBUG   : index page
-2018-04-26 20:58:54,965 DEBUG   : cookie name admin
-2018-04-26 20:58:54,965 DEBUG   : login user is <__main__.User object at 0x105bc0588>
-2018-04-26 20:58:54,965 DEBUG   : Logged in as admin
-2018-04-26 21:05:50,684 DEBUG   : index page
-2018-04-26 21:05:50,684 DEBUG   : cookie name admin
-2018-04-26 21:05:50,684 DEBUG   : login user is <__main__.User object at 0x105bef4e0>
-2018-04-26 21:05:50,685 DEBUG   : Logged in as admin
-2018-04-26 21:08:04,380 DEBUG   : index page
-2018-04-26 21:08:04,381 DEBUG   : cookie name admin
-2018-04-26 21:08:04,381 DEBUG   : login user is <__main__.User object at 0x105bd3080>
-2018-04-26 21:08:04,381 DEBUG   : Logged in as admin
-2018-04-26 21:12:33,769 DEBUG   : index page
-2018-04-26 21:12:33,770 DEBUG   : cookie name admin
-2018-04-26 21:12:33,770 DEBUG   : login user is <__main__.User object at 0x10b9eaeb8>
-2018-04-26 21:12:33,770 DEBUG   : Logged in as admin
-2018-04-26 21:12:58,247 DEBUG   : index page
-2018-04-26 21:12:58,247 DEBUG   : cookie name admin
-2018-04-26 21:12:58,247 DEBUG   : login user is <__main__.User object at 0x10ba76320>
-2018-04-26 21:12:58,247 DEBUG   : Logged in as admin
-2018-04-26 21:13:50,352 DEBUG   : index page
-2018-04-26 21:13:50,352 DEBUG   : cookie name admin
-2018-04-26 21:13:50,353 DEBUG   : login user is <__main__.User object at 0x10ba76080>
-2018-04-26 21:13:50,353 DEBUG   : Logged in as admin
-2018-04-26 21:14:57,303 DEBUG   : index page
-2018-04-26 21:14:57,303 DEBUG   : cookie name admin
-2018-04-26 21:14:57,303 DEBUG   : login user is <__main__.User object at 0x10ba7e588>
-2018-04-26 21:14:57,303 DEBUG   : Logged in as admin
-2018-04-26 21:16:05,177 DEBUG   : index page
-2018-04-26 21:16:05,177 DEBUG   : cookie name admin
-2018-04-26 21:16:05,177 DEBUG   : login user is <__main__.User object at 0x10ba85da0>
-2018-04-26 21:16:05,178 DEBUG   : Logged in as admin
-2018-04-26 21:16:17,497 DEBUG   : index page
-2018-04-26 21:16:17,497 DEBUG   : cookie name admin
-2018-04-26 21:16:17,497 DEBUG   : login user is <__main__.User object at 0x10ba7e940>
-2018-04-26 21:16:17,497 DEBUG   : Logged in as admin
-2018-04-26 21:21:33,198 DEBUG   : index page
-2018-04-26 21:21:33,199 DEBUG   : cookie name admin
-2018-04-26 21:21:33,199 DEBUG   : login user is <__main__.User object at 0x10ba91d30>
-2018-04-26 21:21:33,199 DEBUG   : Logged in as admin
-2018-04-26 21:49:41,017 DEBUG   : index page
-2018-04-26 21:49:41,018 DEBUG   : cookie name admin
-2018-04-26 21:49:41,018 DEBUG   : login user is <__main__.User object at 0x107452d30>
-2018-04-26 21:49:41,018 DEBUG   : Logged in as admin
-2018-04-26 21:52:00,929 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-26 21:52:00,929 DEBUG   : Authorization is None
-2018-04-26 21:52:00,934 DEBUG   : login get method
-2018-04-26 21:52:29,674 DEBUG   : login post method
-2018-04-26 21:52:29,676 DEBUG   : next is /
-2018-04-26 22:08:04,238 DEBUG   : index page
-2018-04-26 22:08:04,240 DEBUG   : cookie name admin
-2018-04-26 22:08:04,241 DEBUG   : login user is <__main__.User object at 0x10c97ab70>
-2018-04-26 22:08:04,241 DEBUG   : Logged in as admin
-2018-04-26 22:08:20,451 DEBUG   : index page
-2018-04-26 22:08:20,451 DEBUG   : cookie name admin
-2018-04-26 22:08:20,451 DEBUG   : login user is <__main__.User object at 0x10ca18240>
-2018-04-26 22:08:20,451 DEBUG   : Logged in as admin
-2018-04-26 22:09:54,513 DEBUG   : index page
-2018-04-26 22:09:54,513 DEBUG   : cookie name admin
-2018-04-26 22:09:54,514 DEBUG   : login user is <__main__.User object at 0x10ca0f898>
-2018-04-26 22:09:54,514 DEBUG   : Logged in as admin
-2018-04-26 22:10:38,601 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-26 22:10:38,601 DEBUG   : Authorization is None
-2018-04-26 22:10:38,605 DEBUG   : login get method
-2018-04-26 22:10:44,326 DEBUG   : login post method
-2018-04-26 22:10:44,328 DEBUG   : next is /
-2018-04-26 22:13:45,146 DEBUG   : login post method
-2018-04-26 22:13:45,148 DEBUG   : next is /
-2018-04-26 22:17:47,995 DEBUG   : index page
-2018-04-26 22:17:47,995 DEBUG   : cookie name admin
-2018-04-26 22:17:47,995 DEBUG   : login user is <__main__.User object at 0x11248a5f8>
-2018-04-26 22:17:47,995 DEBUG   : Logged in as admin
-2018-04-26 22:18:58,894 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-26 22:18:58,894 DEBUG   : Authorization is None
-2018-04-26 22:18:58,904 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
-2018-04-26 22:18:58,905 DEBUG   : Authorization is None
-2018-04-26 22:18:58,922 DEBUG   : login get method
-2018-04-26 22:19:07,659 DEBUG   : login get method
-2018-04-26 22:19:22,330 DEBUG   : login get method
-2018-04-26 22:19:34,107 DEBUG   : login post method
-2018-04-26 22:19:34,108 DEBUG   : next is /
+2018-04-09 21:38:02,819 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
+2018-04-09 21:38:02,822 DEBUG   : Authorization is None
+2018-04-09 21:38:02,834 DEBUG   : login get method
+2018-04-09 21:38:13,661 DEBUG   : login post method
+2018-04-09 21:38:13,661 DEBUG   : next is /
+2018-04-09 21:38:23,637 DEBUG   : index page
+2018-04-09 21:38:23,640 DEBUG   : cookie name admin
+2018-04-09 21:38:23,640 DEBUG   : login user is <__main__.User object at 0x000000000352C9E8>
+2018-04-09 21:38:23,640 DEBUG   : Logged in as admin
+2018-04-09 21:38:31,664 DEBUG   : logout page
+2018-04-09 21:38:31,775 DEBUG   : login get method
+2018-04-09 21:38:31,775 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
+2018-04-09 21:38:31,776 DEBUG   : Authorization is None
+2018-04-09 21:39:26,296 DEBUG   : login get method
+2018-04-09 21:39:26,298 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
+2018-04-09 21:39:26,298 DEBUG   : Authorization is None
+2018-04-27 01:06:18,098 DEBUG   : login get method
+2018-04-27 01:06:20,494 DEBUG   : login post method
+2018-04-27 01:06:20,497 DEBUG   : next is /
+2018-04-27 01:06:26,756 DEBUG   : login get method
+2018-04-27 01:06:33,427 DEBUG   : login post method
+2018-04-27 01:06:33,428 DEBUG   : next is None
+2018-04-27 01:27:25,121 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
+2018-04-27 01:27:25,122 DEBUG   : Authorization is None
+2018-04-27 01:27:25,142 DEBUG   : login get method
+2018-04-27 01:28:23,352 DEBUG   : login get method
+2018-04-27 01:28:30,546 DEBUG   : login get method
+2018-04-27 01:29:24,039 DEBUG   : login get method
+2018-04-27 01:29:30,188 DEBUG   : login post method
+2018-04-27 01:29:30,194 DEBUG   : next is /
+2018-04-27 01:29:34,960 DEBUG   : login get method
+2018-04-27 01:29:41,029 DEBUG   : login post method
+2018-04-27 01:29:41,030 DEBUG   : next is /
+2018-04-27 01:30:27,065 DEBUG   : login get method
+2018-04-27 01:30:34,115 DEBUG   : login post method
+2018-04-27 01:30:34,118 DEBUG   : next is /
+2018-04-27 01:31:53,128 DEBUG   : login get method
+2018-04-27 01:31:58,325 DEBUG   : login post method
+2018-04-27 01:31:58,326 DEBUG   : next is /
+2018-04-27 01:32:18,328 DEBUG   : login post method
+2018-04-27 01:32:18,331 DEBUG   : next is /
+2018-04-27 01:33:04,979 DEBUG   : login get method
+2018-04-27 01:33:04,980 DEBUG   : request_loader url is http://localhost:5000/login?next=%2F, request args is ImmutableMultiDict([('next', u'/')])
+2018-04-27 01:33:04,983 DEBUG   : Authorization is None
+2018-04-27 01:33:21,270 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
+2018-04-27 01:33:21,273 DEBUG   : Authorization is None
+2018-04-27 01:33:21,289 DEBUG   : login get method
+2018-04-27 01:33:35,546 DEBUG   : login get method
+2018-04-27 01:34:16,048 DEBUG   : login get method
+2018-04-27 01:34:24,637 DEBUG   : login post method
+2018-04-27 01:34:24,638 DEBUG   : next is /
+2018-04-27 01:40:19,727 DEBUG   : login post method
+2018-04-27 01:40:19,730 DEBUG   : next is /
+2018-04-27 01:40:36,882 DEBUG   : index page
+2018-04-27 01:40:36,884 DEBUG   : cookie name admin
+2018-04-27 01:40:36,885 DEBUG   : login user is <__main__.User object at 0x00000000058D42E8>
+2018-04-27 01:40:36,887 DEBUG   : Logged in as admin
+2018-04-27 01:42:14,392 DEBUG   : index page
+2018-04-27 01:42:14,394 DEBUG   : cookie name admin
+2018-04-27 01:42:14,395 DEBUG   : login user is <__main__.User object at 0x00000000058D4E48>
+2018-04-27 01:42:14,397 DEBUG   : Logged in as admin
+2018-04-27 01:43:27,069 DEBUG   : index page
+2018-04-27 01:43:27,071 DEBUG   : cookie name admin
+2018-04-27 01:43:27,072 DEBUG   : login user is <__main__.User object at 0x00000000058D4860>
+2018-04-27 01:43:27,072 DEBUG   : Logged in as admin
+2018-04-27 01:43:29,960 DEBUG   : index page
+2018-04-27 01:43:29,961 DEBUG   : cookie name admin
+2018-04-27 01:43:29,964 DEBUG   : login user is <__main__.User object at 0x000000000589C7B8>
+2018-04-27 01:43:29,966 DEBUG   : Logged in as admin
+2018-04-27 01:43:37,128 DEBUG   : index page
+2018-04-27 01:43:37,131 DEBUG   : cookie name admin
+2018-04-27 01:43:37,134 DEBUG   : login user is <__main__.User object at 0x00000000058AB320>
+2018-04-27 01:43:37,134 DEBUG   : Logged in as admin
+2018-04-27 01:43:41,141 DEBUG   : index page
+2018-04-27 01:43:41,142 DEBUG   : cookie name admin
+2018-04-27 01:43:41,144 DEBUG   : login user is <__main__.User object at 0x00000000058ABAC8>
+2018-04-27 01:43:41,145 DEBUG   : Logged in as admin
+2018-04-27 01:44:29,895 DEBUG   : index page
+2018-04-27 01:44:29,897 DEBUG   : cookie name admin
+2018-04-27 01:44:29,898 DEBUG   : login user is <__main__.User object at 0x00000000058ABF98>
+2018-04-27 01:44:29,900 DEBUG   : Logged in as admin
+2018-04-27 01:46:03,760 DEBUG   : index page
+2018-04-27 01:46:03,762 DEBUG   : cookie name admin
+2018-04-27 01:46:03,763 DEBUG   : login user is <__main__.User object at 0x0000000005879AC8>
+2018-04-27 01:46:03,763 DEBUG   : Logged in as admin
+2018-04-27 01:46:47,808 DEBUG   : index page
+2018-04-27 01:46:47,809 DEBUG   : cookie name admin
+2018-04-27 01:46:47,812 DEBUG   : login user is <__main__.User object at 0x0000000003A635F8>
+2018-04-27 01:46:47,813 DEBUG   : Logged in as admin
+2018-04-27 01:47:30,862 DEBUG   : index page
+2018-04-27 01:47:30,864 DEBUG   : cookie name admin
+2018-04-27 01:47:30,865 DEBUG   : login user is <__main__.User object at 0x0000000003A635F8>
+2018-04-27 01:47:30,865 DEBUG   : Logged in as admin
+2018-04-27 01:48:39,055 DEBUG   : index page
+2018-04-27 01:48:39,055 DEBUG   : cookie name admin
+2018-04-27 01:48:39,056 DEBUG   : login user is <__main__.User object at 0x0000000003A6DF98>
+2018-04-27 01:48:39,058 DEBUG   : Logged in as admin
+2018-04-27 20:54:20,184 DEBUG   : index page
+2018-04-27 20:54:20,186 DEBUG   : cookie name admin
+2018-04-27 20:54:20,188 DEBUG   : login user is <__main__.User object at 0x0000000003AB7F98>
+2018-04-27 20:54:20,188 DEBUG   : Logged in as admin
+2018-04-27 20:55:37,065 DEBUG   : index page
+2018-04-27 20:55:37,066 DEBUG   : cookie name admin
+2018-04-27 20:55:37,069 DEBUG   : login user is <__main__.User object at 0x0000000003B59400>
+2018-04-27 20:55:37,071 DEBUG   : Logged in as admin
+2018-04-27 23:26:40,604 DEBUG   : index page
+2018-04-27 23:26:40,605 DEBUG   : cookie name admin
+2018-04-27 23:26:40,605 DEBUG   : login user is <__main__.User object at 0x0000000003B76668>
+2018-04-27 23:26:40,607 DEBUG   : Logged in as admin
+2018-04-27 23:38:50,967 DEBUG   : index page
+2018-04-27 23:38:50,967 DEBUG   : cookie name admin
+2018-04-27 23:38:50,970 DEBUG   : login user is <__main__.User object at 0x0000000003B76128>
+2018-04-27 23:38:50,970 DEBUG   : Logged in as admin
+2018-04-27 23:40:12,887 DEBUG   : index page
+2018-04-27 23:40:12,887 DEBUG   : cookie name admin
+2018-04-27 23:40:12,888 DEBUG   : login user is <__main__.User object at 0x0000000003B6CD68>
+2018-04-27 23:40:12,888 DEBUG   : Logged in as admin
+2018-04-27 23:48:37,641 DEBUG   : index page
+2018-04-27 23:48:37,644 DEBUG   : cookie name admin
+2018-04-27 23:48:37,645 DEBUG   : login user is <__main__.User object at 0x0000000003B821D0>
+2018-04-27 23:48:37,647 DEBUG   : Logged in as admin
+2018-04-27 23:49:33,716 DEBUG   : index page
+2018-04-27 23:49:33,717 DEBUG   : cookie name admin
+2018-04-27 23:49:33,720 DEBUG   : login user is <__main__.User object at 0x0000000003B82668>
+2018-04-27 23:49:33,720 DEBUG   : Logged in as admin
+2018-04-27 23:50:39,358 DEBUG   : index page
+2018-04-27 23:50:39,359 DEBUG   : cookie name admin
+2018-04-27 23:50:39,362 DEBUG   : login user is <__main__.User object at 0x0000000003B82940>
+2018-04-27 23:50:39,364 DEBUG   : Logged in as admin
+2018-04-27 23:50:54,697 DEBUG   : index page
+2018-04-27 23:50:54,697 DEBUG   : cookie name admin
+2018-04-27 23:50:54,697 DEBUG   : login user is <__main__.User object at 0x0000000003B82EF0>
+2018-04-27 23:50:54,697 DEBUG   : Logged in as admin
+2018-04-27 23:51:09,990 DEBUG   : index page
+2018-04-27 23:51:09,990 DEBUG   : cookie name admin
+2018-04-27 23:51:09,992 DEBUG   : login user is <__main__.User object at 0x0000000003BD24E0>
+2018-04-27 23:51:09,993 DEBUG   : Logged in as admin
+2018-04-27 23:51:30,752 DEBUG   : index page
+2018-04-27 23:51:30,753 DEBUG   : cookie name admin
+2018-04-27 23:51:30,756 DEBUG   : login user is <__main__.User object at 0x0000000003B82080>
+2018-04-27 23:51:30,757 DEBUG   : Logged in as admin
+2018-04-27 23:51:47,499 DEBUG   : index page
+2018-04-27 23:51:47,500 DEBUG   : cookie name admin
+2018-04-27 23:51:47,503 DEBUG   : login user is <__main__.User object at 0x0000000003B82710>
+2018-04-27 23:51:47,503 DEBUG   : Logged in as admin
+2018-04-27 23:52:07,286 DEBUG   : index page
+2018-04-27 23:52:07,288 DEBUG   : cookie name admin
+2018-04-27 23:52:07,290 DEBUG   : login user is <__main__.User object at 0x0000000003B6C6A0>
+2018-04-27 23:52:07,292 DEBUG   : Logged in as admin
+2018-04-27 23:54:02,303 DEBUG   : index page
+2018-04-27 23:54:02,305 DEBUG   : cookie name admin
+2018-04-27 23:54:02,306 DEBUG   : login user is <__main__.User object at 0x0000000003BCC080>
+2018-04-27 23:54:02,306 DEBUG   : Logged in as admin
+2018-04-27 23:54:54,111 DEBUG   : index page
+2018-04-27 23:54:54,111 DEBUG   : cookie name admin
+2018-04-27 23:54:54,112 DEBUG   : login user is <__main__.User object at 0x0000000003C40240>
+2018-04-27 23:54:54,115 DEBUG   : Logged in as admin
+2018-04-28 00:04:30,872 DEBUG   : index page
+2018-04-28 00:04:30,872 DEBUG   : cookie name admin
+2018-04-28 00:04:30,872 DEBUG   : login user is <__main__.User object at 0x0000000003C33630>
+2018-04-28 00:04:30,872 DEBUG   : Logged in as admin
+2018-04-28 00:04:46,614 DEBUG   : index page
+2018-04-28 00:04:46,614 DEBUG   : cookie name admin
+2018-04-28 00:04:46,615 DEBUG   : login user is <__main__.User object at 0x0000000003C332E8>
+2018-04-28 00:04:46,615 DEBUG   : Logged in as admin
+2018-04-28 00:06:26,825 DEBUG   : index page
+2018-04-28 00:06:26,826 DEBUG   : cookie name admin
+2018-04-28 00:06:26,828 DEBUG   : login user is <__main__.User object at 0x0000000003C29F28>
+2018-04-28 00:06:26,828 DEBUG   : Logged in as admin
+2018-04-28 00:06:35,007 DEBUG   : index page
+2018-04-28 00:06:35,009 DEBUG   : cookie name admin
+2018-04-28 00:06:35,010 DEBUG   : login user is <__main__.User object at 0x0000000003C40828>
+2018-04-28 00:06:35,012 DEBUG   : Logged in as admin
+2018-04-28 00:11:03,818 DEBUG   : index page
+2018-04-28 00:11:03,819 DEBUG   : cookie name admin
+2018-04-28 00:11:03,821 DEBUG   : login user is <__main__.User object at 0x0000000003C7F898>
+2018-04-28 00:11:03,822 DEBUG   : Logged in as admin
+2018-04-28 00:22:27,849 DEBUG   : index page
+2018-04-28 00:22:27,851 DEBUG   : cookie name admin
+2018-04-28 00:22:27,852 DEBUG   : login user is <__main__.User object at 0x0000000003C29E80>
+2018-04-28 00:22:27,854 DEBUG   : Logged in as admin
+2018-04-28 14:54:03,740 DEBUG   : index page
+2018-04-28 14:54:03,742 DEBUG   : cookie name admin
+2018-04-28 14:54:03,744 DEBUG   : login user is <__main__.User object at 0x0000000003B85908>
+2018-04-28 14:54:03,746 DEBUG   : Logged in as admin
+2018-04-28 16:59:35,838 DEBUG   : index page
+2018-04-28 16:59:35,839 DEBUG   : cookie name admin
+2018-04-28 16:59:35,841 DEBUG   : login user is <__main__.User object at 0x0000000003BC2518>
+2018-04-28 16:59:35,842 DEBUG   : Logged in as admin
+2018-04-28 17:02:54,549 DEBUG   : index page
+2018-04-28 17:02:54,549 DEBUG   : cookie name admin
+2018-04-28 17:02:54,552 DEBUG   : login user is <__main__.User object at 0x0000000003B85CF8>
+2018-04-28 17:02:54,552 DEBUG   : Logged in as admin
+2018-04-28 17:04:41,108 DEBUG   : index page
+2018-04-28 17:04:41,109 DEBUG   : cookie name admin
+2018-04-28 17:04:41,111 DEBUG   : login user is <__main__.User object at 0x00000000040862B0>
+2018-04-28 17:04:41,112 DEBUG   : Logged in as admin
+2018-04-28 18:07:09,637 DEBUG   : index page
+2018-04-28 18:07:09,638 DEBUG   : cookie name admin
+2018-04-28 18:07:09,641 DEBUG   : login user is <__main__.User object at 0x0000000003B8C080>
+2018-04-28 18:07:09,641 DEBUG   : Logged in as admin
+2018-04-28 18:07:25,836 DEBUG   : index page
+2018-04-28 18:07:25,838 DEBUG   : cookie name admin
+2018-04-28 18:07:25,838 DEBUG   : login user is <__main__.User object at 0x0000000003BF5F60>
+2018-04-28 18:07:25,839 DEBUG   : Logged in as admin
+2018-04-28 18:12:52,796 DEBUG   : index page
+2018-04-28 18:12:52,798 DEBUG   : cookie name admin
+2018-04-28 18:12:52,799 DEBUG   : login user is <__main__.User object at 0x0000000003B0E3C8>
+2018-04-28 18:12:52,801 DEBUG   : Logged in as admin
+2018-04-28 18:19:36,052 DEBUG   : index page
+2018-04-28 18:19:36,055 DEBUG   : cookie name admin
+2018-04-28 18:19:36,056 DEBUG   : login user is <__main__.User object at 0x0000000003FC23C8>
+2018-04-28 18:19:36,058 DEBUG   : Logged in as admin
+2018-04-28 18:27:19,255 DEBUG   : index page
+2018-04-28 18:27:19,256 DEBUG   : cookie name admin
+2018-04-28 18:27:19,257 DEBUG   : login user is <__main__.User object at 0x0000000004E4A390>
+2018-04-28 18:27:19,259 DEBUG   : Logged in as admin
+2018-04-29 21:45:17,203 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
+2018-04-29 21:45:17,204 DEBUG   : Authorization is None
+2018-04-29 21:45:17,263 DEBUG   : login get method
+2018-04-29 21:46:06,532 DEBUG   : login post method
+2018-04-29 21:46:06,534 DEBUG   : next is /
+2018-04-29 21:47:18,809 DEBUG   : index page
+2018-04-29 21:47:18,811 DEBUG   : cookie name admin
+2018-04-29 21:47:18,812 DEBUG   : login user is <__main__.User object at 0x7f50d04d78d0>
+2018-04-29 21:47:18,813 DEBUG   : Logged in as admin
+2018-04-29 21:48:08,774 DEBUG   : index page
+2018-04-29 21:48:08,774 DEBUG   : cookie name admin
+2018-04-29 21:48:08,774 DEBUG   : login user is <__main__.User object at 0x7f50d04e4850>
+2018-04-29 21:48:08,774 DEBUG   : Logged in as admin

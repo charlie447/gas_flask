@@ -21,8 +21,10 @@
     <!--  Paper Dashboard core CSS    -->
     <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
 
+
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
+
 
     <!--  Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -33,14 +35,14 @@
 <body>
 
 <div class="wrapper">
-	<div class="sidebar" data-background-color="white" data-active-color="danger">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
 
-	<!--
+    <!--
 		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
 		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
 	-->
 
-		<div class="sidebar-wrapper">
+    	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="#" class="simple-text">
                     Creative Tim
@@ -66,7 +68,7 @@
                         <p>Table List</p>
                     </a>
                 </li>
-                <li  class="active">
+                <li>
                     <a href="typography.html">
                         <i class="ti-text"></i>
                         <p>Typography</p>
@@ -90,7 +92,7 @@
                         <p>Notifications</p>
                     </a>
                 </li>
-				<li class="active-pro">
+				<li class="active active-pro">
                     <a href="upgrade.html">
                         <i class="ti-export"></i>
                         <p>Upgrade to PRO</p>
@@ -101,7 +103,7 @@
     </div>
 
     <div class="main-panel">
-		<nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle">
@@ -110,7 +112,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Typography</a>
+                    <a class="navbar-brand" href="#">Dashboard</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -147,92 +149,82 @@
             </div>
         </nav>
 
-
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
+					<div class="col-md-8 col-md-offset-2">
                         <div class="card">
-                            <div class="header">
-                                <h4 class="title">Paper Dashboard Headings</h4>
-                                <p class="category">Created using <a href="https://www.google.com/fonts/specimen/Muli">Muli</a> Font Family</p>
+                            <div class="header text-center">
+                                <h3 class="title">Paper Dashboard</h3>
+                                <p class="category">Are you looking for more components? Please check our Premium Version of Paper Dashboard Pro.</p>
+								<br>
                             </div>
-                            <div class="content">
-
-                                <div class="typo-line">
-                                    <h1><p class="category">Header 1</p>Paper Dashboard Heading </h1>
-                                </div>
-
-                                    <div class="typo-line">
-                                    <h2><p class="category">Header 2</p>Paper Dashboard Heading </h2>
-                                </div>
-                                <div class="typo-line">
-                                    <h3><p class="category">Header 3</p>Paper Dashboard Heading </h3>
-                                </div>
-                                <div class="typo-line">
-                                    <h4><p class="category">Header 4</p>Paper Dashboard Heading </h4>
-                                </div>
-                                <div class="typo-line">
-                                    <h5><p class="category">Header 5</p>Paper Dashboard Heading </h5>
-                                </div>
-                                 <div class="typo-line">
-                                    <h6><p class="category">Header 6</p>Paper Dashboard Heading </h6>
-                                </div>
-                                <div class="typo-line">
-                                    <p><span class="category">Paragraph</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-                                </div>
-                                <div class="typo-line">
-                                    <p class="category">Quote</p>
-                                    <blockquote>
-                                     <p>
-                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
-                                     </p>
-                                     <small>
-                                     Steve Jobs, CEO Apple
-                                     </small>
-                                    </blockquote>
-                                </div>
-
-                                <div class="typo-line">
-                                    <p class="category">Muted Text</p>
-                                    <p class="text-muted">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-                                    </p>
-                                </div>
-                                <div class="typo-line">
-                                    <!--
-                                     there are also "text-info", "text-success", "text-warning", "text-danger" clases for the text
-                                     -->
-                                    <p class="category">Coloured Text</p>
-                                    <p class="text-primary">
-                                        Text Primary - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                                    </p>
-                                    <p class="text-info">
-                                        Text Info - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                                    </p>
-                                    <p class="text-success">
-                                        Text Success - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                                    </p>
-                                    <p class="text-warning">
-                                        Text Warning - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                                    </p>
-                                    <p class="text-danger">
-                                        Text Danger - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
-                                    </p>
-                                </div>
-
-                                <div class="typo-line">
-                                    <h2><p class="category">Small Tag</p>Header with small subtitle <br><small>".small" is a tag for the headers</small> </h2>
-                                </div>
-
-
+                            <div class="content table-responsive table-full-width table-upgrade">
+                                <table class="table">
+                                    <thead>
+                                        <th></th>
+                                    	<th class="text-center">Free</th>
+                                    	<th class="text-center">PRO</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        	<td>Components</td>
+                                        	<td>16</td>
+                                        	<td>160</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Plugins</td>
+                                        	<td>4</td>
+                                        	<td>15</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Example Pages</td>
+                                        	<td>4</td>
+                                        	<td>25</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Documentation</td>
+                                        	<td><i class="fa fa-times text-danger"></i></td>
+                                        	<td><i class="fa fa-check text-success"></td>
+                                        </tr>
+                                        <tr>
+                                        	<td>SASS Files</td>
+											<td><i class="fa fa-check text-success"></i></td>
+                                        	<td><i class="fa fa-check text-success"></td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Login/Register/Lock Pages</td>
+											<td><i class="fa fa-times text-danger"></i></td>
+                                        	<td><i class="fa fa-check text-success"></td>
+                                        </tr>
+										<tr>
+                                        	<td>Premium Support</td>
+											<td><i class="fa fa-times text-danger"></i></td>
+                                        	<td><i class="fa fa-check text-success"></td>
+                                        </tr>
+										<tr>
+                                        	<td></td>
+											<td>Free</td>
+                                        	<td>Just $39</td>
+                                        </tr>
+										<tr>
+											<td></td>
+											<td>
+												<a href="#" class="btn btn-round btn-fill btn-default disabled">Current Version</a>
+											</td>
+											<td>
+												<a target="_blank" href="#/product/paper-dashboard-pro/?ref=pdfree-upgrade-archive" class="btn btn-round btn-fill btn-info">Upgrade to PRO</a>
+											</td>
+										</tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+
 
         <footer class="footer">
             <div class="container-fluid">
@@ -256,12 +248,11 @@
                         </li>
                     </ul>
                 </nav>
-				<div class="copyright pull-right">
+                <div class="copyright pull-right">
                     &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="#">Creative Tim</a>. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
                 </div>
             </div>
         </footer>
-
 
     </div>
 </div>
@@ -290,5 +281,4 @@
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-
 </html>
