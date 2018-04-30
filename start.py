@@ -16,7 +16,7 @@ login_manager = LoginManager()
 app = Flask(__name__)
 db = SQLAlchemy(app)
 # URI -> mysql://username:password@server/db
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:admin@localhost:3306/gas'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:CHARLIE4494@localhost:3306/gas'
 login_manager.init_app(app)
 login_manager.login_view = "login"
 login_manager.login_message = "please login and continue"
@@ -50,6 +50,17 @@ class Gas(db.Model):
 
     def __repr__(self):
         return '<Mobile: %r>' % self._mobile
+
+class Users(db.Model):
+    __tablename__ = 'gas_user'
+    username = db.Column(db.String(20),primary_key=True)
+    password = db.Column(db.String(20))
+    mobile = db.Column(db.String(100),primary_key=True)
+    
+    def __init__(self,username,password,mobile):
+        self.username = username
+        self.password = password
+        self.mobile = mobile
 
 def config():
     if os.path.exists(LOG_PATH):
@@ -155,6 +166,34 @@ def login():
 
     logger.debug("login get method")
     return render_template('login.html')
+
+@app.route('/signup',methods=['POST','GET'])
+def signup():
+    print("signup processing")
+    if request.method == 'POST':
+        # print("login processing...if request.method =='post'")
+        logger.debug("signup post method")
+        username = request.form['username']
+        # print('username:'+username)
+        password = request.form['password']
+        re_password = request.form['re-password']
+        # print("password:"+password)
+        next_url = request.args.get("next")
+        logger.debug('next is %s' % next_url)
+        if username != '' and password != '':
+            
+            session['username'] = username
+            session['password'] = password
+            print("session has been set")
+            resp = make_response(render_template('index.html'))
+            
+            return resp
+        else:
+            return render_template('401.html')
+            # return jsonify({'status': '-1', 'errmsg': '用户名或密码错误！'})
+
+    logger.debug("signup get method")
+    return render_template('signup.html')
 
 @app.route('/logout')
 @flask_login.login_required          #如果当前没有用户登录，那会返回401，unauthorized

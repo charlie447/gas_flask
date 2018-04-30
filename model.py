@@ -22,3 +22,14 @@ class Gas(db.Model):
 
     def __repr__(self):
         return '<Mobile: %r>' % self._mobile
+
+class User(db.Model):
+    __tablename__ = 'user'
+    username = db.Column(db.String(20))
+    password = db.Column(db.String(20))
+    mobile = db.Column(db.String(100))
+    
+    def __init__(self,username,password,mobile):
+        self.username = username
+        self.password = password
+        self.mobile = mobile
