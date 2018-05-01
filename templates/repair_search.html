@@ -49,19 +49,19 @@
 
         <ul class="nav">
             <li >
-                <a href="index">
+                <a href="/index">
                     <i class="ti-stats-up"></i>
                     <p>数据分析</p>
                 </a>
             </li>
             <li>
-                <a href="user">
+                <a href="/user">
                     <i class="ti-user"></i>
                     <p>账户信息</p>
                 </a>
             </li>
             <li>
-                <a href="repair_search">
+                <a href="/repair_search">
                     <i class="ti-view-list-alt"></i>
                     <p>待定</p>
                 </a>
@@ -73,13 +73,13 @@
                 </a>
             </li>
             <li>
-                <a href="repair_info">
+                <a href="/repair_info">
                     <i class="ti-pencil-alt2"></i>
                     <p>燃气报修</p>
                 </a>
             </li>
             <li>
-                <a href="maps">
+                <a href="/maps">
                     <i class="ti-map-alt"></i>
                     <p>地图</p>
                 </a>
@@ -90,7 +90,7 @@
                     <p>Notifications</p>
                 </a>
             </li>
-            <li class="active-pro">
+            <li class="/active-pro">
                 <a href="upgrade.html">
                     <i class="ti-export"></i>
                     <p>Upgrade to PRO</p>
@@ -116,8 +116,12 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-								<p>Stats</p>
+                                <i class="ti-user"></i>
+								<p>
+                                        
+                                        Hello {{ username }}!
+                                        
+                                </p>
                             </a>
                         </li>
                         <li class="dropdown">
@@ -136,10 +140,10 @@
                               </ul>
                         </li>
 						<li>
-                            <a href="#">
-								<i class="ti-settings"></i>
-								<p>Settings</p>
-                            </a>
+                                <a href="logout">
+                                        <i class="ti-more-alt"></i>
+                                        <p>退出登录</p>
+                                </a>
                         </li>
                     </ul>
 
@@ -149,66 +153,90 @@
 
 
         <div class="content">
+                <div class="container-fluid">
+                        <div class="row">
+                           
+                            <div class="col-lg-12 col-md-12">
+                                <div class="card">
+                                    
+                                    <div class="content">
+                                        <form action="/repair_search/get_result_by_id" method="POST">
+                                                                                        
+                                            
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <div class="form-group">
+                                                        
+                                                        <input type="text" class="form-control border-input" placeholder="输入报修单号查询" name="order_id" required>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button type="submit" class="btn btn-info btn-fill pull-right">查询</button>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                        </div>
+                    </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Striped Table</h4>
-                                <p class="category">Here is a subtitle for this table</p>
+                                <h4 class="title">报修信息查询</h4>
+                                <p class="category">查询结果如下</p>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-striped">
+                                    {% if username == 'admin' %}
+                                        <thead>
+                                            <th>Account</th>
+                                            <th>Mobile</th>
+                                            <th>Area</th>
+                                            <th>Addr</th>
+                                            <th>Type</th>
+                                            <th>Order ID</th>
+                                        </thead>
+                                        {% for item in table_data %}
+                                            <tr>
+                                                <td>{{item.account}}</td>
+                                                <td>{{item.mobile}}</td>
+                                                <td>{{item.area}}</td>
+                                                <td>{{item.address}}</td>
+                                                <td>{{item.type}}</td>
+                                                <td>{{item.order_id}}</td>
+                                            </tr>
+                                        {% endfor %}
+                                    {% else %}
                                     <thead>
-                                        <th>ID</th>
-                                    	<th>Name</th>
-                                    	<th>Salary</th>
-                                    	<th>Country</th>
-                                    	<th>City</th>
+                                        <th>Mobile</th>
+                                    	<th>Area</th>
+                                    	<th>Addr</th>
+                                    	<th>Type</th>
+                                    	<th>Order ID</th>
                                     </thead>
                                     <tbody>
+                                        
+                                        {% for item in table_data %}
                                         <tr>
-                                        	<td>1</td>
-                                        	<td>Dakota Rice</td>
-                                        	<td>$36,738</td>
-                                        	<td>Niger</td>
-                                        	<td>Oud-Turnhout</td>
+                                        	<td>{{item.mobile}}</td>
+                                        	<td>{{item.area}}</td>
+                                        	<td>{{item.address}}</td>
+                                        	<td>{{item.type}}</td>
+                                        	<td>{{item.order_id}}</td>
                                         </tr>
-                                        <tr>
-                                        	<td>2</td>
-                                        	<td>Minerva Hooper</td>
-                                        	<td>$23,789</td>
-                                        	<td>Curaçao</td>
-                                        	<td>Sinaai-Waas</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>3</td>
-                                        	<td>Sage Rodriguez</td>
-                                        	<td>$56,142</td>
-                                        	<td>Netherlands</td>
-                                        	<td>Baileux</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>4</td>
-                                        	<td>Philip Chaney</td>
-                                        	<td>$38,735</td>
-                                        	<td>Korea, South</td>
-                                        	<td>Overland Park</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>5</td>
-                                        	<td>Doris Greene</td>
-                                        	<td>$63,542</td>
-                                        	<td>Malawi</td>
-                                        	<td>Feldkirchen in Kärnten</td>
-                                        </tr>
-                                        <tr>
-                                        	<td>6</td>
-                                        	<td>Mason Porter</td>
-                                        	<td>$78,615</td>
-                                        	<td>Chile</td>
-                                        	<td>Gloucester</td>
-                                        </tr>
+                                        {% endfor %}
+                                    {% endif %}
                                     </tbody>
                                 </table>
 

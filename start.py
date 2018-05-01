@@ -14,9 +14,11 @@ pymysql.install_as_MySQLdb()
 login_manager = LoginManager()
 
 app = Flask(__name__)
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
 # URI -> mysql://username:password@server/db
 app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:CHARLIE4494@localhost:3306/gas'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
+db = SQLAlchemy(app)
 login_manager.init_app(app)
 login_manager.login_view = "login"
 login_manager.login_message = "please login and continue"
@@ -141,12 +143,13 @@ def login():
         username = request.form['username']
         # print('username:'+username)
         password = request.form['password']
+        gas_user = Users.query.filter_by(username=username).first()  # 从数据库中获得一个gas_user对象，同select语句
         # print("password:"+password)
         next_url = request.args.get("next")
         logger.debug('next is %s' % next_url)
-        if username == 'admin' and password == 'admin123':
+        if gas_user is not None and password == gas_user.password:
             user = User()
-            user.id = "admin"
+            user.id = gas_user.username
             flask_login.login_user(user)
             # flask.flash('Logged in successfully.')
             # user.id = "admin"
@@ -154,8 +157,9 @@ def login():
             # flask_login.login_user(user)
             session['username'] = username
             session['password'] = password
+            session['mobile'] = gas_user.mobile
             print("session has been set")
-            resp = make_response(render_template('index.html'))
+            resp = make_response(render_template('index.html',name=session['username']))
             # print("cannot render the index page")
             resp.set_cookie('username', username)
             return resp
@@ -175,23 +179,29 @@ def signup():
         logger.debug("signup post method")
         username = request.form['username']
         # print('username:'+username)
+
         password = request.form['password']
         re_password = request.form['re-password']
+        mobile = request.form['mobile']
         # print("password:"+password)
+        gas_user = Users.query.filter_by(username=username).first()  # 从数据库中获得一个gas_user对象，同select语句
+        gas_user_by_mobile = Users.query.filter_by(mobile=mobile).first()
         next_url = request.args.get("next")
         logger.debug('next is %s' % next_url)
-        if username != '' and password != '':
+        if gas_user is None and gas_user_by_mobile is None:
+            # 如果两次密码不同，定向到401
+            if password != re_password:
+                return render_template('401.html')
             
-            session['username'] = username
-            session['password'] = password
-            print("session has been set")
-            resp = make_response(render_template('index.html'))
-            
-            return resp
+            new_user = Users(username,password,mobile)
+            db.session.add(new_user)
+            db.session.commit()
+            return redirect('/login')
+
         else:
             return render_template('401.html')
             # return jsonify({'status': '-1', 'errmsg': '用户名或密码错误！'})
-
+        # 注册不通过有几种情况，用户名已存在，手机号已被注册，两次密码不同，但都暂时定向到401，
     logger.debug("signup get method")
     return render_template('signup.html')
 
@@ -211,7 +221,11 @@ def hello(name=None):
 
 @app.route('/repair_info')
 def repair_info():
-    return render_template('repair_info.html')
+    context = {
+        "username":session['username'],
+        "mobile":session['mobile']
+    }
+    return render_template('repair_info.html',**context)
     # pass
 
 @app.route('/account_info')
@@ -221,13 +235,86 @@ def account_info():
 
 @app.route('/repair_search')
 def repair_search():
-    return render_template('repair_search.html')
+    table_data_list = []
+    if session['username']=='admin':
+        data = Gas.query.all()   # 获得所有repair_info的数据，admin返回的是所有对象列表
+    else:
+        data = Gas.query.filter_by(_account=session['username']).all()  # 普通用户
+    
+    if len(data) !=0:
+        
+        for data_obj in data:
+            tmp = {
+                "account":data_obj._account,
+                "mobile":data_obj._mobile,
+                "area":data_obj._area,
+                "address":data_obj._address,
+                "type":data_obj._type,
+                "order_id":data_obj._order_id
+            }
+            table_data_list.append(tmp) 
+        context = {
+            "username":session['username'],
+            "mobile":session['mobile'],
+            "table_data":table_data_list
+        }
+    else:
+        context = {
+            "username":session['username'],
+            "mobile":session['mobile'],
+            "table_data":[{
+                "account":"无记录",
+                "mobile":"无记录",
+                "area":"无记录",
+                "address":"无记录",
+                "type":"无记录",
+                "order_id":"无记录"
+            }]
+        }
+    # print(context)
+    return render_template('repair_search.html',**context)
     #new
-
-@app.route('/success',methods=['post'])
+@app.route('/repair_search/get_result_by_id',methods=['POST'])
+def get_result_by_id():
+    table_data_list = []
+    order_id = request.form['order_id']
+    data = Gas.query.filter_by(_order_id = order_id).all()
+    if len(data) !=0:
+        
+        for data_obj in data:
+            tmp = {
+                "account":data_obj._account,
+                "mobile":data_obj._mobile,
+                "area":data_obj._area,
+                "address":data_obj._address,
+                "type":data_obj._type,
+                "order_id":data_obj._order_id
+            }
+            table_data_list.append(tmp) 
+        context = {
+            "username":session['username'],
+            "mobile":session['mobile'],
+            "table_data":table_data_list
+        }
+    else:
+        context = {
+            "username":session['username'],
+            "mobile":session['mobile'],
+            "table_data":[{
+                "account":"无记录",
+                "mobile":"无记录",
+                "area":"无记录",
+                "address":"无记录",
+                "type":"无记录",
+                "order_id":"无记录"
+            }]
+        }
+    # print(context)
+    return render_template('repair_search.html',**context)
+@app.route('/success',methods=['POST'])
 def success():
     _mobile = request.form['mobile']
-    _account = request.form['account']
+    _account = session['username']
     _date = request.form['date']
     _type = int(request.form['type'])
     _area = request.form['area']
