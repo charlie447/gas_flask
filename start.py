@@ -16,7 +16,7 @@ login_manager = LoginManager()
 app = Flask(__name__)
 # db = SQLAlchemy(app)
 # URI -> mysql://username:password@server/db
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:CHARLIE4494@localhost:3306/gas'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:admin@localhost:3306/gas'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 db = SQLAlchemy(app)
 login_manager.init_app(app)
@@ -228,9 +228,9 @@ def repair_info():
     return render_template('repair_info.html',**context)
     # pass
 
-@app.route('/account_info')
+@app.route('/user')
 def account_info():
-    return render_template('account_info.html')
+    return render_template('user.html')
     #new
 
 @app.route('/repair_search')

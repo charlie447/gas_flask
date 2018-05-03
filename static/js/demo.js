@@ -57,10 +57,10 @@ demo = {
 
 
         var data = {
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           series: [
-            [542, 543, 520, 680, 653, 753, 326, 434, 568, 610, 756, 895],
-            [230, 293, 380, 480, 503, 553, 600, 664, 698, 710, 736, 795]
+            [26272,23748,26212,21418,19333],
+            [35453,23540,26996,21001,21338,21141,20815,19164,22560,23804,32259,30221]
           ]
         };
 
@@ -105,8 +105,8 @@ demo = {
         Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences', {
-          labels: ['62%','32%','6%'],
-          series: [62, 32, 6]
+          labels: ['58%','32%','6%','4%'],
+          series: [58, 32, 6,4]
         });
     },
 

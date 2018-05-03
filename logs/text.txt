@@ -990,3 +990,104 @@
 2018-05-01 22:55:22,490 DEBUG   : login get method
 2018-05-01 22:55:38,397 DEBUG   : login post method
 2018-05-01 22:55:38,406 DEBUG   : next is /
+2018-05-03 20:06:58,739 DEBUG   : request_loader url is http://localhost:5000/, request args is ImmutableMultiDict([])
+2018-05-03 20:06:58,756 DEBUG   : Authorization is None
+2018-05-03 20:06:59,052 DEBUG   : login get method
+2018-05-03 20:07:22,729 DEBUG   : login post method
+2018-05-03 20:09:37,796 DEBUG   : login post method
+2018-05-03 20:09:38,184 DEBUG   : next is /
+2018-05-03 20:09:49,888 DEBUG   : login post method
+2018-05-03 20:09:49,897 DEBUG   : next is /
+2018-05-03 20:09:59,388 DEBUG   : login post method
+2018-05-03 20:09:59,395 DEBUG   : next is /
+2018-05-03 20:10:14,829 DEBUG   : login post method
+2018-05-03 20:10:14,833 DEBUG   : next is /
+2018-05-03 20:10:24,804 DEBUG   : login post method
+2018-05-03 20:10:24,814 DEBUG   : next is /
+2018-05-03 20:10:41,432 DEBUG   : login get method
+2018-05-03 20:10:58,693 DEBUG   : login post method
+2018-05-03 20:10:58,710 DEBUG   : next is /index
+2018-05-03 20:11:56,898 DEBUG   : signup get method
+2018-05-03 20:12:18,567 DEBUG   : signup post method
+2018-05-03 20:12:18,583 DEBUG   : next is None
+2018-05-03 20:12:18,623 DEBUG   : login get method
+2018-05-03 20:12:30,704 DEBUG   : login post method
+2018-05-03 20:12:30,712 DEBUG   : next is None
+2018-05-03 20:21:59,367 DEBUG   : index page
+2018-05-03 20:21:59,373 DEBUG   : cookie name admin
+2018-05-03 20:21:59,375 DEBUG   : login user is <__main__.User object at 0x7fd921d20d10>
+2018-05-03 20:21:59,380 DEBUG   : Logged in as admin
+2018-05-03 22:27:02,876 DEBUG   : index page
+2018-05-03 22:27:02,880 DEBUG   : cookie name admin
+2018-05-03 22:27:02,880 DEBUG   : login user is <__main__.User object at 0x7fc35cc70250>
+2018-05-03 22:27:02,880 DEBUG   : Logged in as admin
+2018-05-03 22:34:56,104 DEBUG   : index page
+2018-05-03 22:34:56,127 DEBUG   : cookie name admin
+2018-05-03 22:34:56,127 DEBUG   : login user is <__main__.User object at 0x7fc35cbc5790>
+2018-05-03 22:34:56,128 DEBUG   : Logged in as admin
+2018-05-03 22:36:05,136 DEBUG   : index page
+2018-05-03 22:36:05,136 DEBUG   : cookie name admin
+2018-05-03 22:36:05,136 DEBUG   : login user is <__main__.User object at 0x7fc35cc23590>
+2018-05-03 22:36:05,136 DEBUG   : Logged in as admin
+2018-05-03 22:43:12,459 DEBUG   : index page
+2018-05-03 22:43:12,462 DEBUG   : cookie name admin
+2018-05-03 22:43:12,464 DEBUG   : login user is <__main__.User object at 0x7fc35cc23050>
+2018-05-03 22:43:12,465 DEBUG   : Logged in as admin
+2018-05-03 22:51:27,726 DEBUG   : index page
+2018-05-03 22:51:27,726 DEBUG   : cookie name admin
+2018-05-03 22:51:27,726 DEBUG   : login user is <__main__.User object at 0x7fc35d6cbe50>
+2018-05-03 22:51:27,726 DEBUG   : Logged in as admin
+2018-05-03 22:51:50,804 DEBUG   : index page
+2018-05-03 22:51:50,805 DEBUG   : cookie name admin
+2018-05-03 22:51:50,805 DEBUG   : login user is <__main__.User object at 0x7fc35cb862d0>
+2018-05-03 22:51:50,805 DEBUG   : Logged in as admin
+2018-05-03 22:52:47,777 DEBUG   : index page
+2018-05-03 22:52:47,777 DEBUG   : cookie name admin
+2018-05-03 22:52:47,778 DEBUG   : login user is <__main__.User object at 0x7fc35cb86550>
+2018-05-03 22:52:47,778 DEBUG   : Logged in as admin
+2018-05-03 23:02:07,690 DEBUG   : index page
+2018-05-03 23:02:07,698 DEBUG   : cookie name admin
+2018-05-03 23:02:07,698 DEBUG   : login user is <__main__.User object at 0x7fc35cb2e4d0>
+2018-05-03 23:02:07,698 DEBUG   : Logged in as admin
+2018-05-03 23:02:36,428 DEBUG   : index page
+2018-05-03 23:02:36,433 DEBUG   : cookie name admin
+2018-05-03 23:02:36,434 DEBUG   : login user is <__main__.User object at 0x7fc35cb5ad50>
+2018-05-03 23:02:36,434 DEBUG   : Logged in as admin
+2018-05-03 23:14:03,732 DEBUG   : index page
+2018-05-03 23:14:03,732 DEBUG   : cookie name admin
+2018-05-03 23:14:03,732 DEBUG   : login user is <__main__.User object at 0x7fc35cb9c390>
+2018-05-03 23:14:03,733 DEBUG   : Logged in as admin
+2018-05-03 23:26:02,497 DEBUG   : index page
+2018-05-03 23:26:02,498 DEBUG   : cookie name admin
+2018-05-03 23:26:02,499 DEBUG   : login user is <__main__.User object at 0x7fc35cb1aa10>
+2018-05-03 23:26:02,500 DEBUG   : Logged in as admin
+2018-05-03 23:31:21,814 DEBUG   : logout page
+2018-05-03 23:31:21,960 DEBUG   : login get method
+2018-05-03 23:31:21,961 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
+2018-05-03 23:31:21,961 DEBUG   : Authorization is None
+2018-05-03 23:31:39,651 DEBUG   : login post method
+2018-05-03 23:31:39,883 DEBUG   : next is None
+2018-05-03 23:32:03,941 DEBUG   : logout page
+2018-05-03 23:32:03,967 DEBUG   : login get method
+2018-05-03 23:32:03,968 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
+2018-05-03 23:32:03,968 DEBUG   : Authorization is None
+2018-05-03 23:32:16,333 DEBUG   : login post method
+2018-05-03 23:32:16,368 DEBUG   : next is None
+2018-05-03 23:38:04,283 DEBUG   : index page
+2018-05-03 23:38:04,286 DEBUG   : cookie name admin
+2018-05-03 23:38:04,289 DEBUG   : login user is <__main__.User object at 0x7fc35c6eb610>
+2018-05-03 23:38:04,294 DEBUG   : Logged in as admin
+2018-05-03 23:50:28,655 DEBUG   : logout page
+2018-05-03 23:50:28,716 DEBUG   : login get method
+2018-05-03 23:50:28,718 DEBUG   : request_loader url is http://localhost:5000/login, request args is ImmutableMultiDict([])
+2018-05-03 23:50:28,722 DEBUG   : Authorization is None
+2018-05-03 23:50:34,807 DEBUG   : login post method
+2018-05-03 23:50:34,974 DEBUG   : next is None
+2018-05-03 23:55:49,595 DEBUG   : index page
+2018-05-03 23:55:49,596 DEBUG   : cookie name irene
+2018-05-03 23:55:49,601 DEBUG   : login user is <__main__.User object at 0x7fc357786f90>
+2018-05-03 23:55:49,601 DEBUG   : Logged in as irene
+2018-05-04 00:02:23,438 DEBUG   : index page
+2018-05-04 00:02:23,439 DEBUG   : cookie name irene
+2018-05-04 00:02:23,440 DEBUG   : login user is <__main__.User object at 0x7f5751e83350>
+2018-05-04 00:02:23,441 DEBUG   : Logged in as irene
