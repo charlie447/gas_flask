@@ -10,6 +10,8 @@ from flask.ext.sqlalchemy import SQLAlchemy
 import pymysql
 pymysql.install_as_MySQLdb()
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 login_manager = LoginManager()
 
