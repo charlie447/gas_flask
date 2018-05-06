@@ -141,7 +141,7 @@
                                 <li><a href="#">Notification 2</a></li>
                                 <li><a href="#">Notification 3</a></li>
                                 <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
+                                <li><a href="/ajax_test">test ajax</a></li>
                               </ul>
                         </li>
 						<li>
@@ -270,12 +270,27 @@
                                 <p class="category">24 Hours performance</p>
                             </div>
                             <div class="content">
-                                <div id="chartHours" class="ct-chart"></div>
+                                <div id="main_line_chart" class="ct-chart"></div>
                                 <div class="footer">
                                     <div class="chart-legend">
                                         <i class="fa fa-circle text-info"></i> Open
                                         <i class="fa fa-circle text-danger"></i> Click
                                         <i class="fa fa-circle text-warning"></i> Click Second Time
+                                        <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                      
+                                                      
+                                                      <p>4 ajax table<b class="caret"></b></p>
+                                                      
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="#" data="0" onclick="onAjaxTable(this)">ajax表一</a></li>
+                                                  <li><a href="#" data="1" onclick="onAjaxTable(this)">ajax表二</a></li>
+                                                  <li><a href="#" data="2" onclick="onAjaxTable(this)">ajax表三</a></li>
+                                                  <li><a href="#" data="3" onclick="onAjaxTable(this)">ajax表四</a></li>
+                                                  <li><a href="/ajax_test">test ajax</a></li>
+                                                </ul>
+                                        </div>
                                     </div>
                                     <hr>
                                     <div class="stats">
@@ -318,12 +333,13 @@
                                 <p class="category">All products including Taxes</p>
                             </div>
                             <div class="content">
-                                <div id="chartActivity" class="ct-chart"></div>
+                                <div id="main_histogram" class="ct-chart"></div>
 
                                 <div class="footer">
                                     <div class="chart-legend">
                                         <i class="fa fa-circle text-info"></i> 观测值
                                         <i class="fa fa-circle text-warning"></i> 预测值
+
                                     </div>
                                     <hr>
                                     <div class="stats">
@@ -380,7 +396,8 @@
 	<script src="../static/js/bootstrap-checkbox-radio.js"></script>
 
 	<!--  Charts Plugin -->
-	<script src="../static/js/chartist.min.js"></script>
+    <script src="../static/js/chartist.min.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
 
     <!--  Notifications Plugin    -->
     <script src="../static/js/bootstrap-notify.js"></script>
@@ -392,7 +409,8 @@
 	<script src="../static/js/paper-dashboard.js"></script>
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-	<script src="../static/js/demo.js"></script>
+    <script src="../static/js/demo.js"></script>
+    <script src="../static/js/echart-script.js"></script>
 
 	<script type="text/javascript">
     	$(document).ready(function(){
@@ -410,5 +428,31 @@
 
     	});
 	</script>
-
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main_histogram'));
+    
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: 'ECharts 入门示例'
+                },
+                tooltip: {},
+                legend: {
+                    data:['销量']
+                },
+                xAxis: {
+                    data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                },
+                yAxis: {},
+                series: [{
+                    name: '销量',
+                    type: 'bar',
+                    data: [5, 20, 36, 10, 10, 20]
+                }]
+            };
+    
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
 </html>

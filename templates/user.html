@@ -48,13 +48,13 @@
         </div>
 
         <ul class="nav">
-            <li class="active">
+            <li >
                 <a href="index">
                     <i class="ti-stats-up"></i>
                     <p>数据分析</p>
                 </a>
             </li>
-            <li>
+            <li class="active"> 
                 <a href="user">
                     <i class="ti-user"></i>
                     <p>账户信息</p>
@@ -113,35 +113,42 @@
                     <a class="navbar-brand" href="#">User Profile</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-								<p>Stats</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                    <p class="notification">5</p>
-									<p>Notifications</p>
-									<b class="caret"></b>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
-						<li>
-                            <a href="#">
-								<i class="ti-settings"></i>
-								<p>Settings</p>
-                            </a>
-                        </li>
-                    </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="ti-user"></i>
+                                        <p>
+                                            
+                                            {% if username %}
+                                            Hello {{ username }}!
+                                            {% else %}
+                                            Hello World!
+                                            {% endif %}
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="ti-bell"></i>
+                                            <p class="notification">5</p>
+                                            <p>Notifications</p>
+                                            <b class="caret"></b>
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">Notification 1</a></li>
+                                        <li><a href="#">Notification 2</a></li>
+                                        <li><a href="#">Notification 3</a></li>
+                                        <li><a href="#">Notification 4</a></li>
+                                        <li><a href="/ajax_test">test ajax</a></li>
+                                      </ul>
+                                </li>
+                                <li>
+                                    <a href="logout">
+                                        <i class="ti-more-alt"></i>
+                                        <p>退出登录</p>
+                                    </a>
+                                </li>
+                            </ul>
 
                 </div>
             </div>
@@ -166,18 +173,13 @@
                                                 <input type="text" class="form-control border-input" disabled placeholder="Company" value="Creative Code Inc.">
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-5">
                                             <div class="form-group">
                                                 <label>Username</label>
-                                                <input type="text" class="form-control border-input" placeholder="Username" value="michael23">
+                                                <input type="text" class="form-control border-input" placeholder="Username" value="{{username}}" disabled>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control border-input" placeholder="Email">
-                                            </div>
-                                        </div>
+                                        
                                     </div>
 
                                     <div class="row">

@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import flask_login
-from flask import Flask, session, redirect, url_for, escape, request, render_template, make_response, jsonify
+from flask import Flask, session, redirect, url_for, escape, request, render_template, make_response, jsonify,Response
 import logging
 import sys
 import os,time
@@ -10,15 +10,15 @@ from flask.ext.sqlalchemy import SQLAlchemy
 import pymysql
 pymysql.install_as_MySQLdb()
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# reload(sys)
+# sys.setdefaultencoding('utf-8')
 
 login_manager = LoginManager()
 
 app = Flask(__name__)
 # db = SQLAlchemy(app)
 # URI -> mysql://username:password@server/db
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:admin@localhost:3306/gas'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:CHARLIE4494@localhost:3306/gas'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 db = SQLAlchemy(app)
 login_manager.init_app(app)
@@ -232,7 +232,11 @@ def repair_info():
 
 @app.route('/user')
 def account_info():
-    return render_template('user.html')
+    context = {
+        "username":session['username'],
+        "mobile":session['mobile']
+    }
+    return render_template('user.html',**context)
     #new
 
 @app.route('/repair_search')
@@ -342,9 +346,64 @@ def maps():
 def loading_map():
     return render_template('baidu_maps.html')
 
+@app.route('/ajax_test')
+def test_ajax():
+    return render_template('ajax_test.html')
+@app.route('/ajax/<name>',methods=['POST','GET'])
+def query_info_by_name(name):
+    table_data_list = []
+    data = Gas.query.filter_by(_account=name).all()
+    for data_obj in data:
+        tmp = {
+            "account":data_obj._account,
+            "mobile":data_obj._mobile,
+            "area":data_obj._area,
+            "address":data_obj._address,
+            "type":data_obj._type,
+            "order_id":data_obj._order_id
+        }
+        table_data_list.append(tmp)   
+    return jsonify(table_data_list)
+
+@app.route('/api/getChartData/<index>',methods=['GET','POST'])
+def get_chart_data(index):
+    data_list = [
+        [5, 20, 36, 10, 10, 20],
+        [2, 8, 29, 21, 20, 30],
+        [1, 30, 36, 20, 30, 10],
+        [5, 26, 30, 16, 12, 17]
+    ]
+    i = int(index)
+    return jsonify(data_list[i])
+
 @app.route('/json')
 def json():
     return jsonify({'username': session['username'], 'password': session['password']})
+
+
+'''
+以下路由只是用来测试ajax功能的
+'''
+@app.route('/mystring')
+def mystring():
+    return 'my string'
+
+@app.route('/dataFromAjax')
+def dataFromAjax():
+    test = request.args.get('mydata')
+    print(test)
+    return 'dataFromAjax'
+
+@app.route('/mydict', methods=['GET', 'POST'])
+def mydict():
+    d = {'name': 'xmr', 'age': 18}
+    return jsonify(d)
+
+@app.route('/mylist')
+def mylist():
+    l = ['xmr', 18]
+    return jsonify(l)
+
 # set the secret key.  keep this really secret:
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 if __name__ == '__main__':

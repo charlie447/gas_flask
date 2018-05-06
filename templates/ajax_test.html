@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../static/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../static/img/new_logo.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>燃气报修预测系统</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="../static/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="../static/css/paper-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../static/css/demo.css" rel="stylesheet" />
+
+    <!--  Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="../static/css/themify-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="sidebar" data-background-color="white" data-active-color="danger">
+
+    <!--
+		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+	-->
+
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a href="#" class="simple-text">
+                导航栏
+            </a>
+        </div>
+
+        <ul class="nav">
+            <li >
+                <a href="/index">
+                    <i class="ti-stats-up"></i>
+                    <p>数据分析</p>
+                </a>
+            </li>
+            <li>
+                <a href="/user">
+                    <i class="ti-user"></i>
+                    <p>账户信息</p>
+                </a>
+            </li>
+            <li>
+                <a href="/repair_search">
+                    <i class="ti-view-list-alt"></i>
+                    <p>待定</p>
+                </a>
+            </li>
+            <li>
+                <a href="/typography.html">
+                    <i class="ti-clipboard"></i>
+                    <p>报修查询</p>
+                </a>
+            </li>
+            <li>
+                <a href="/repair_info">
+                    <i class="ti-pencil-alt2"></i>
+                    <p>燃气报修</p>
+                </a>
+            </li>
+            <li >
+                <a href="/maps">
+                    <i class="ti-map-alt"></i>
+                    <p>地图</p>
+                </a>
+            </li>
+            <li>
+                <a href="/notifications.html">
+                    <i class="ti-bell"></i>
+                    <p>Notifications</p>
+                </a>
+            </li>
+            <li class="active-pro">
+                <a href="/upgrade.html">
+                    <i class="ti-export"></i>
+                    <p>Upgrade to PRO</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="main-panel">
+		<nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Maps</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-panel"></i>
+								<p>Stats</p>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p class="notification">5</p>
+									<p>Notifications</p>
+									<b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a  onclick="getIrene()">by irene</a></li>
+                                <li><a onclick="getUser1()">by user1</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                              </ul>
+                        </li>
+						<li>
+                            <a href="/signout">
+								<i class="ti-more-alt"></i>
+								<p>退出登录</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+		<div class="content">
+                <div class="container-fluid">
+                <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">报修量年度统计</h4>
+                                    <p class="category">24 Hours performance</p>
+                                </div>
+                                <div class="content">
+                                    <div id="main_histogram" class="ct-chart"></div>
+                                    <div class="footer">
+                                            <div class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                          
+                                                          
+                                                          <p><i class="ti-bell"></i>4 ajax table</p>
+                                                          <b class="caret"></b>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                      <li><a href="#" data="0" onclick="onAjaxTable(this)">ajax表一</a></li>
+                                                      <li><a href="#" data="1" onclick="onAjaxTable(this)">ajax表二</a></li>
+                                                      <li><a href="#" data="2" onclick="onAjaxTable(this)">ajax表三</a></li>
+                                                      <li><a href="#" data="3" onclick="onAjaxTable(this)">ajax表四</a></li>
+                                                      <li><a href="/ajax_test">test ajax</a></li>
+                                                    </ul>
+                                            </div>
+                                        <hr>
+                                        <div class="stats">
+                                            <i class="ti-reload"></i> Updated 3 minutes ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+		</div>
+        <h1>Ajax Test</h1>
+        <button class="btn4">ajax string</button>
+        <button class="btn5">ajax dict</button>
+        <button class="btn6">ajax list</button>
+        <button class="btn6_2">ajax sentDataToFlask</button><br/><br/>
+        <p>load:</p>
+        <button class="btn7">load  from file</button>
+        <button class="btn10">load</button><br/><br/>
+        <div>getJson: </div><br/>
+        <button class="btn8">getJson</button><br/><br/>
+            <button class="btn9">post</button>
+		
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="../static/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="../static/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="../static/js/bootstrap-checkbox-radio.js"></script>
+
+	<!--  Charts Plugin -->
+    <script src="../static/js/chartist.min.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="../static/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+	<script src="../static/js/paper-dashboard.js"></script>
+
+	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+	<script src="../static/js/demo.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+
+            $(".btn4").click(function(){
+            $.ajax({url:"/mystring", data:{"mydata": "test"},success:function(data){
+                console.log(data);
+            }});
+        });
+
+            $(".btn6_2").click(function(){
+            $.ajax({url:"/ajax/irene", data:{"mydata": "test data"},success:function(data){
+                alert(data);
+            }});
+        });
+
+            $(".btn5").click(function(){
+            $.ajax({url:"/ajax/irene", success:function(data){
+                console.log(data);
+                for (let index = 0; index < data.length; index++) {
+                    const element = data[index];
+                    console.log(element.mobile)
+                }
+            }});
+        });
+
+            $(".btn6").click(function(){
+            $.ajax({url:"/api/getChartData/1", success:function(data){
+                // alert("name: " + data[0] + " age:" + data[1]);
+                console.log(data)
+                for (let index = 0; index < data.length; index++) {
+                    const element = data[index];
+                    console.log(element)
+                    
+                }
+            }});
+        });
+
+        $(".btn7").click(function(){
+                $("p").load("../static/test.txt");
+        });
+        $(".btn10").click(function(){
+                $("p").load("/mystring");
+        });
+
+            $(".btn8").click(function(){
+                $.getJSON("/mydict",function(data){
+                    $.each(data, function(i, field){
+                        $("div").append(field + " ");
+                    });
+                });
+            });
+
+            $(".btn9").click(function(){
+                $.post("/mydict", function(data, status){
+                alert("name: " + data.name + " age:" + data.age);
+            });
+        });
+        });
+
+    </script>
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('main_histogram'));
+                // 显示标题，图例和空的坐标轴
+                myChart.setOption({
+                    title: {
+                        text: '异步数据加载示例'
+                    },
+                    tooltip: {},
+                    legend: {
+                        data:['销量']
+                    },
+                    xAxis: {
+                        data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                    },
+                    yAxis: {},
+                    series: [{
+                        name: '销量',
+                        type: 'bar',
+                        data: []
+                    }]
+                });
+                myChart.showLoading();
+                function fetchData(cb) {
+                    // 通过 setTimeout 模拟异步加载
+                    $.ajax({url:"/api/getChartData/0",success:function(data){
+                        console.log(data);
+                        cb({
+                            
+                        data: data
+                        });
+                    }}); 
+                }
+                function ajaxData(res,index_str){
+                    ajax_url = "/api/getChartData/" + index_str;
+                    $.ajax({url:ajax_url,success:function(data){
+                        console.log(data);
+                        res({
+                            data:data
+                        })
+                    }})
+                }
+                var data_arr = [
+                [5, 20, 36, 10, 10, 20],
+                [2, 8, 29, 21, 20, 30],
+                [1, 30, 36, 20, 30, 10],
+                [5, 26, 30, 16, 12, 17]
+                ]
+                function onAjaxTable(e){
+                    myChart.showLoading();
+                    var index_data = e.getAttribute("data")
+                    console.log(index_data)
+                    // var table_index = Number(data)
+                    ajaxData(function(data){
+                        myChart.hideLoading();
+                        myChart.setOption({
+                            series:[{
+                                name:"xiao liang",
+                                data:data.data
+                            }]
+                        })
+                    },index_data)
+                    
+                }
+                fetchData(function (data) {
+                    myChart.hideLoading();
+                    myChart.setOption({
+                        series: [{
+                            // 根据名字对应到相应的系列
+                            name: '销量',
+                            data: data.data
+                        }]
+                    });
+                });
+                
+            </script>
+
+</html>
