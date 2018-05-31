@@ -164,6 +164,7 @@ def login():
             resp = make_response(render_template('index.html',name=session['username']))
             # print("cannot render the index page")
             resp.set_cookie('username', username)
+            
             return resp
             # return jsonify({'status': '0', 'errmsg': '登录成功！'})
         else:
@@ -236,6 +237,7 @@ def account_info():
         "username":session['username'],
         "mobile":session['mobile']
     }
+    print(session["password"])
     return render_template('user.html',**context)
     #new
 
@@ -380,6 +382,40 @@ def get_chart_data(index):
 def json():
     return jsonify({'username': session['username'], 'password': session['password']})
 
+@app.route('/ajax/verify_password')
+def verify_password():
+    pwd = request.args['pwd']
+    data = {
+        "status":"ok"
+    }
+    if pwd == session['password']:
+        return jsonify(data)
+    else:
+        data["status"] = "no"
+        return jsonify(data)
+
+@app.route('/ajax/change_password',methods=['POST'])
+def change_password():
+    print(".........ready")
+    new_password = request.form['password']
+    print(new_password)
+    data = {
+        "status":"ok"
+    }
+    q = Users.query.filter_by(username = session['username']).update(dict(password = new_password))
+    db.session.commit()
+    return jsonify(data)
+
+@app.route('/ajax/update_mobile', methods=['POST'])
+def update_mobile():
+    new_mobile = request.form['mobile']
+    data = {
+        "status":"ok"
+    }
+    q = Users.query.filter_by(username = session['username']).update(dict(mobile = new_mobile))
+    db.session.commit()
+    session['mobile'] = new_mobile
+    return jsonify(data)    
 
 '''
 以下路由只是用来测试ajax功能的
