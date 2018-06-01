@@ -29,6 +29,8 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="../static/css/themify-icons.css" rel="stylesheet">
 
+
+
 </head>
 <body>
 
@@ -185,19 +187,36 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="text" class="form-control border-input" placeholder="Company" value="Chet">
+                                                <label>输入密码进入下一步</label>
+                                                <input type="password" id="confirm_pwd" class="form-control border-input" placeholder="Confirm your password" >
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <!-- <div class="col-md-6 ">
+                                                <label></label>
                                             <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="text" class="form-control border-input" placeholder="Last Name" value="Faker">
+                                                <a href="#" id="go_change_password_btn" onclick="showNewPasswordInput()">修改密码</a>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
-
-                                    <div class="row">
+                                    <div class="row new_password " hidden>
+                                            <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>输入新密码</label>
+                                                        <input type="password" id="new_password" class="form-control border-input" placeholder="new password" name="new_pwd1">
+                                                    </div>
+                                                </div>
+                                            <div class="col-md-6 ">
+                                                    <div class="form-group ">
+                                                        <label>二次确认</label>
+                                                        <input type="password" class=" form-control border-input" name="new_pwd2" >
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <div class="row text-center new_password" hidden>
+                                            <button   id="change_password_btn"  class="btn btn-info btn-fill btn-wd">修改密码</button>
+                                    </div>
+                                    <br>
+                                    <div class="row hide_first" hidden>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Address</label>
@@ -206,7 +225,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row hide_first" hidden>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>City</label>
@@ -227,9 +246,20 @@
                                         </div>
                                     </div>
 
-                                  
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-info btn-fill btn-wd">Update Profile</button>
+                                    <div class="row hide_first" hidden>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>联系方式</label>
+                                                    <input type="text" class="form-control border-input"  id="mobile" value="{{mobile}}">
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="row text-center">
+                                        <button   id="next_btn" class="btn btn-info btn-fill btn-wd">下一步</button>
+                                    </div>
+                                    <div class="row text-center" hidden id="update_btn">
+                                            <button    class="btn btn-info btn-fill btn-wd">更新</button>
                                     </div>
                                     <div class="clearfix"></div>
                                 </form>
@@ -271,6 +301,73 @@
 	<script src="../static/js/paper-dashboard.js"></script>
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-	<script src="../static/js/demo.js"></script>
+    <script src="../static/js/demo.js"></script>
 
+    
+    <script type="text/javascript">
+
+        // function showNewPasswordInput() {
+        //     $(".new_password").show();
+        //     return false;
+        // }
+
+        $(function () {
+            
+        
+            function onVerifyPassword() {
+                
+                $.get("/ajax/verify_password?pwd=" + $("#confirm_pwd").val(), function (data) {
+                    if (data["status"]=="ok") {
+                        $(".hide_first").show();
+                        $(".new_password").show();
+                        console.log("password is ok");
+                        // $("#update_btn").text("更新")
+                        $("#next_btn").hide()
+                        $("#update_btn").show()
+                    }else{
+                        console.log("password is wrong");
+                    }
+                },"json");
+
+                return false;
+            }
+            
+            function onChangePassword() {
+                var pwd1 = $(".new_password").find("input[name=new_pwd1]").val()
+                var pwd2 = $(".new_password").find("input[name=new_pwd2]").val()
+                if (pwd1 == pwd2) {
+                    console.log("ready to update password.")
+
+                    $.post("/ajax/change_password", {password:pwd1},function (data) {
+                        if (data['status'] == "ok") {
+                            $(location).attr('href', '/logout');
+                        }else{
+                            window.location.reload();
+                        }
+                    });
+                }else{
+                    console.log("passwords is not the same")
+                }
+
+                return false;
+            }
+            function onUpdate(){
+                var new_mobile = $("#mobile").val();
+                $.post("/ajax/update_mobile", {mobile:new_mobile}, function (data) {
+                    if (data['status'] == 'ok') {
+                        console.log("oh yeah");
+                    }else{
+                        console.log("oh no");
+                    }
+                });
+                return false;
+            }
+            console.log("ready for updating");
+            
+            $("#change_password_btn").click(onChangePassword);
+            $("#next_btn").click(onVerifyPassword);
+            $("#update_btn").click(onUpdate);
+        })
+
+    </script>
 </html>
