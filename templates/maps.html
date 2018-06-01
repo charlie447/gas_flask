@@ -67,10 +67,10 @@
                 </a>
             </li>
             <li>
-                <a href="/typography.html">
-                    <i class="ti-clipboard"></i>
-                    <p>报修查询</p>
-                </a>
+              <a href="/repair_search">
+                        <i class="ti-clipboard"></i>
+                        <p>报修查询</p>
+                    </a>
             </li>
             <li>
                 <a href="/repair_info">
@@ -110,38 +110,31 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Maps</a>
+                    <a class="navbar-brand" href="#">地图</a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-								<p>Stats</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                    <p class="notification">5</p>
-									<p>Notifications</p>
-									<b class="caret"></b>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
-						<li>
-                            <a href="/signout">
-								<i class="ti-more-alt"></i>
-								<p>退出登录</p>
-                            </a>
-                        </li>
-                    </ul>
+                           <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="ti-user"></i>
+                                        <p>
+                                            
+                                            {% if username %}
+                                            Hello {{ username }}!
+                                            {% else %}
+                                            Hello World!
+                                            {% endif %}
+                                        </p>
+                                    </a>
+                                </li>
+                       
+                                <li>
+                                    <a href="logout">
+                                        <i class="ti-more-alt"></i>
+                                        <p>退出登录</p>
+                                    </a>
+                                </li>
+                            </ul>
 
                 </div>
             </div>
@@ -151,7 +144,7 @@
             <div class="container-fluid">
                 <div class="card card-map">
 					<div class="header">
-                        <h4 class="title">Baidu Maps</h4>
+                        <h4 class="title">百度地图</h4>
                     </div>
 					<div class="map" style="width: 100%;height: 900px;">
 						<iframe src="baidu_maps" style="width: 100%;height: 100%;" frameborder="0" scrolling="no"></iframe>
