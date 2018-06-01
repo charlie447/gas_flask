@@ -258,7 +258,8 @@ def repair_search():
                 "area":data_obj._area,
                 "address":data_obj._address,
                 "type":data_obj._type,
-                "order_id":data_obj._order_id
+                "order_id":data_obj._order_id,
+                "date":data_obj._date
             }
             table_data_list.append(tmp) 
         context = {
