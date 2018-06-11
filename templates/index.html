@@ -256,7 +256,21 @@
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">报修量年度统计</h4>
-                               
+                                <div class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                          
+                                          
+                                          <p>统计表下拉选项<b class="caret"></b></p>
+                                          
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#" data="0" onclick="onAjaxTable(this)">LSTM-全市</a></li>
+                                      <li><a href="#" data="1" onclick="onAjaxTable(this)">LSTM-徐汇</a></li>
+                                      <li><a href="#" data="2" onclick="onAjaxTable(this)">LSTM-宝山</a></li>
+                                      <li><a href="#" data="3" onclick="onAjaxTable(this)">SARIMA-全市</a></li>
+                                      <li><a href="/ajax_test">test ajax</a></li>
+                                    </ul>
+                            </div>
                             </div>
                             <div class="content">
                                 <div id="main_line_chart" class="ct-chart" style="height: 500px;"></div>
@@ -265,6 +279,7 @@
                                         <i class="fa fa-circle text-info"></i> Open
                                         <i class="fa fa-circle text-danger"></i> Click
                                         <i class="fa fa-circle text-warning"></i> Click Second Time
+                                        <!-- 
                                         <div class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                       
@@ -280,6 +295,7 @@
                                                   <li><a href="/ajax_test">test ajax</a></li>
                                                 </ul>
                                         </div>
+                                         -->
                                     </div>
                                     <hr>
                                  
