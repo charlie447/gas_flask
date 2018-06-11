@@ -18,7 +18,7 @@ login_manager = LoginManager()
 app = Flask(__name__)
 # db = SQLAlchemy(app)
 # URI -> mysql://username:password@server/db
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:CHARLIE4494@localhost:3306/gas'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:admin@localhost:3306/gas'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 db = SQLAlchemy(app)
 login_manager.init_app(app)
@@ -277,7 +277,8 @@ def repair_search():
                 "area":"无记录",
                 "address":"无记录",
                 "type":"无记录",
-                "order_id":"无记录"
+                "order_id":"无记录",
+                "date":"无记录"
             }]
         }
     # print(context)
@@ -297,7 +298,8 @@ def get_result_by_id():
                 "area":data_obj._area,
                 "address":data_obj._address,
                 "type":data_obj._type,
-                "order_id":data_obj._order_id
+                "order_id":data_obj._order_id,
+                "date":data_obj._date
             }
             table_data_list.append(tmp) 
         context = {
@@ -315,7 +317,8 @@ def get_result_by_id():
                 "area":"无记录",
                 "address":"无记录",
                 "type":"无记录",
-                "order_id":"无记录"
+                "order_id":"无记录",
+                "date":"无记录"
             }]
         }
     # print(context)

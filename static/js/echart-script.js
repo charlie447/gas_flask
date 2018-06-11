@@ -113,7 +113,7 @@ function onAjaxTable(e){
     var new_option = {
         title : {
             text: '未来一周气温变化',
-            subtext: '纯属虚构'
+            subtext: '横向对比'
         },
         tooltip : {
             trigger: 'axis'
@@ -191,7 +191,7 @@ fetchData(function(data){
     var new_option = {
         title : {
             text: '未来一周气温变化',
-            subtext: '纯属虚构'
+            subtext: '横向对比'
         },
         tooltip : {
             trigger: 'axis'
