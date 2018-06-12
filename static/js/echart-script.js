@@ -39,7 +39,7 @@ option = {
     ],
     series : [
         {
-            name:'最高气温',
+            name:'原始值',
             type:'line',
             data:[],
             markPoint : {
@@ -55,7 +55,7 @@ option = {
             }
         },
         {
-            name:'最低气温',
+            name:'拟合值',
             type:'line',
             data:[],
             markPoint : {
@@ -233,7 +233,7 @@ fetchData(function(data){
         ],
         series : [
             {
-                name:'最高气温',
+                name:'原始值',
                 type:'line',
                 data:line1[2],
                 markPoint : {
@@ -249,7 +249,7 @@ fetchData(function(data){
                 }
             },
             {
-                name:'最低气温',
+                name:'拟合值',
                 type:'line',
                 data:line2[2],
                 markPoint : {
